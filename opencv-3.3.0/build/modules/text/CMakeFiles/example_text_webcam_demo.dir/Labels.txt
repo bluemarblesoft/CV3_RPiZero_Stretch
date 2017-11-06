@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_text
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/text/samples/webcam_demo.cpp
+ Extra
+ opencv_text
+ Sample
