@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_aruco
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/aruco/samples/create_diamond.cpp
+ Extra
+ opencv_aruco
+ Sample
