@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_line_descriptor
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/line_descriptor/samples/lines_extraction.cpp
+ Extra
+ opencv_line_descriptor
+ Sample
