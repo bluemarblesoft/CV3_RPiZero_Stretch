@@ -1,0 +1,27 @@
+# Target labels
+ Extra
+ opencv_bgsegm
+ Module
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/bgsegm/include/opencv2/bgsegm.hpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/Packages/opencv_contrib-3.3.0/modules/bgsegm/src/bgfg_gaussmix.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/Packages/opencv_contrib-3.3.0/modules/bgsegm/src/bgfg_gmg.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/Packages/opencv_contrib-3.3.0/modules/bgsegm/src/bgfg_subcnt.cpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/Packages/opencv_contrib-3.3.0/modules/bgsegm/src/precomp.hpp
+ Extra
+ opencv_bgsegm
+ Module
+/home/pi/Packages/opencv-3.3.0/build/cvconfig.h
+/home/pi/Packages/opencv-3.3.0/build/opencv2/opencv_modules.hpp
