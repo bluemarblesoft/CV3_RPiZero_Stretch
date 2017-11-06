@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_face
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/face/samples/facerec_eigenfaces.cpp
+ Extra
+ opencv_face
+ Sample
