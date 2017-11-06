@@ -1,0 +1,24 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/Packages/opencv_contrib-3.3.0/modules/tracking/samples/tracker.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_tracking",
+				"Sample"
+			]
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_tracking",
+			"Sample"
+		],
+		"name" : "example_tracking_tracker"
+	}
+}
