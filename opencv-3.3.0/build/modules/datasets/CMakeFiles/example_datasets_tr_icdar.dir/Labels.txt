@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_datasets
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/datasets/samples/tr_icdar.cpp
+ Extra
+ opencv_datasets
+ Sample
