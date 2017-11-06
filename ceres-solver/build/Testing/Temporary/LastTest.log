@@ -1,0 +1,3476 @@
+Start testing: Oct 14 04:44 JST
+----------------------------------------------------------
+1/76 Testing: array_utils_test
+1/76 Test: array_utils_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/array_utils_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"array_utils_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from ArrayUtils
+[ RUN      ] ArrayUtils.IsArrayValid
+[       OK ] ArrayUtils.IsArrayValid (0 ms)
+[ RUN      ] ArrayUtils.FindInvalidIndex
+[       OK ] ArrayUtils.FindInvalidIndex (0 ms)
+[----------] 2 tests from ArrayUtils (2 ms total)
+
+[----------] 3 tests from MapValuesToContiguousRange
+[ RUN      ] MapValuesToContiguousRange.ContiguousEntries
+[       OK ] MapValuesToContiguousRange.ContiguousEntries (0 ms)
+[ RUN      ] MapValuesToContiguousRange.NonContiguousEntries
+[       OK ] MapValuesToContiguousRange.NonContiguousEntries (0 ms)
+[ RUN      ] MapValuesToContiguousRange.NonContiguousRepeatingEntries
+[       OK ] MapValuesToContiguousRange.NonContiguousRepeatingEntries (0 ms)
+[----------] 3 tests from MapValuesToContiguousRange (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 2 test cases ran. (5 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"array_utils_test" end time: Oct 14 04:44 JST
+"array_utils_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/76 Testing: autodiff_test
+2/76 Test: autodiff_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/autodiff_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"autodiff_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from AutoDiff
+[ RUN      ] AutoDiff.ProjectiveCameraModel
+[       OK ] AutoDiff.ProjectiveCameraModel (0 ms)
+[ RUN      ] AutoDiff.Metric
+[       OK ] AutoDiff.Metric (0 ms)
+[ RUN      ] AutoDiff.VaryingNumberOfResidualsForOneCostFunctorType
+[       OK ] AutoDiff.VaryingNumberOfResidualsForOneCostFunctorType (0 ms)
+[ RUN      ] AutoDiff.VariadicAutoDiff
+[       OK ] AutoDiff.VariadicAutoDiff (7 ms)
+[ RUN      ] AutoDiff.AlignedAllocationTest
+[       OK ] AutoDiff.AlignedAllocationTest (0 ms)
+[----------] 5 tests from AutoDiff (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (11 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"autodiff_test" end time: Oct 14 04:44 JST
+"autodiff_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/76 Testing: autodiff_cost_function_test
+3/76 Test: autodiff_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/autodiff_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"autodiff_cost_function_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from AutodiffCostFunction
+[ RUN      ] AutodiffCostFunction.BilinearDifferentiationTest
+[       OK ] AutodiffCostFunction.BilinearDifferentiationTest (0 ms)
+[ RUN      ] AutodiffCostFunction.ManyParameterAutodiffInstantiates
+[       OK ] AutodiffCostFunction.ManyParameterAutodiffInstantiates (0 ms)
+[----------] 2 tests from AutodiffCostFunction (1 ms total)
+
+[----------] 1 test from AutoDiffCostFunction
+[ RUN      ] AutoDiffCostFunction.PartiallyFilledResidualShouldFailEvaluation
+[       OK ] AutoDiffCostFunction.PartiallyFilledResidualShouldFailEvaluation (0 ms)
+[----------] 1 test from AutoDiffCostFunction (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (4 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"autodiff_cost_function_test" end time: Oct 14 04:44 JST
+"autodiff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/76 Testing: autodiff_local_parameterization_test
+4/76 Test: autodiff_local_parameterization_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/autodiff_local_parameterization_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"autodiff_local_parameterization_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from AutoDiffLocalParameterizationTest
+[ RUN      ] AutoDiffLocalParameterizationTest.IdentityParameterization
+[       OK ] AutoDiffLocalParameterizationTest.IdentityParameterization (0 ms)
+[ RUN      ] AutoDiffLocalParameterizationTest.ScaledParameterization
+[       OK ] AutoDiffLocalParameterizationTest.ScaledParameterization (0 ms)
+[----------] 2 tests from AutoDiffLocalParameterizationTest (1 ms total)
+
+[----------] 3 tests from AutoDiffLocalParameterization
+[ RUN      ] AutoDiffLocalParameterization.QuaternionParameterizationZeroTest
+[       OK ] AutoDiffLocalParameterization.QuaternionParameterizationZeroTest (0 ms)
+[ RUN      ] AutoDiffLocalParameterization.QuaternionParameterizationNearZeroTest
+[       OK ] AutoDiffLocalParameterization.QuaternionParameterizationNearZeroTest (0 ms)
+[ RUN      ] AutoDiffLocalParameterization.QuaternionParameterizationNonZeroTest
+[       OK ] AutoDiffLocalParameterization.QuaternionParameterizationNonZeroTest (0 ms)
+[----------] 3 tests from AutoDiffLocalParameterization (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 2 test cases ran. (4 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"autodiff_local_parameterization_test" end time: Oct 14 04:44 JST
+"autodiff_local_parameterization_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/76 Testing: block_jacobi_preconditioner_test
+5/76 Test: block_jacobi_preconditioner_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/block_jacobi_preconditioner_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"block_jacobi_preconditioner_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from BlockJacobiPreconditionerTest
+[ RUN      ] BlockJacobiPreconditionerTest.SmallProblem
+[       OK ] BlockJacobiPreconditionerTest.SmallProblem (0 ms)
+[ RUN      ] BlockJacobiPreconditionerTest.LargeProblem
+[       OK ] BlockJacobiPreconditionerTest.LargeProblem (0 ms)
+[----------] 2 tests from BlockJacobiPreconditionerTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"block_jacobi_preconditioner_test" end time: Oct 14 04:44 JST
+"block_jacobi_preconditioner_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/76 Testing: block_random_access_dense_matrix_test
+6/76 Test: block_random_access_dense_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/block_random_access_dense_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"block_random_access_dense_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from BlockRandomAccessDenseMatrix
+[ RUN      ] BlockRandomAccessDenseMatrix.GetCell
+[       OK ] BlockRandomAccessDenseMatrix.GetCell (0 ms)
+[ RUN      ] BlockRandomAccessDenseMatrix.WriteCell
+[       OK ] BlockRandomAccessDenseMatrix.WriteCell (0 ms)
+[----------] 2 tests from BlockRandomAccessDenseMatrix (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"block_random_access_dense_matrix_test" end time: Oct 14 04:44 JST
+"block_random_access_dense_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/76 Testing: block_random_access_diagonal_matrix_test
+7/76 Test: block_random_access_diagonal_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/block_random_access_diagonal_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"block_random_access_diagonal_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from BlockRandomAccessDiagonalMatrixTest
+[ RUN      ] BlockRandomAccessDiagonalMatrixTest.MatrixContents
+[       OK ] BlockRandomAccessDiagonalMatrixTest.MatrixContents (1 ms)
+[ RUN      ] BlockRandomAccessDiagonalMatrixTest.RightMultiply
+[       OK ] BlockRandomAccessDiagonalMatrixTest.RightMultiply (1 ms)
+[ RUN      ] BlockRandomAccessDiagonalMatrixTest.Invert
+[       OK ] BlockRandomAccessDiagonalMatrixTest.Invert (0 ms)
+[----------] 3 tests from BlockRandomAccessDiagonalMatrixTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"block_random_access_diagonal_matrix_test" end time: Oct 14 04:44 JST
+"block_random_access_diagonal_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/76 Testing: block_random_access_sparse_matrix_test
+8/76 Test: block_random_access_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/block_random_access_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"block_random_access_sparse_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from BlockRandomAccessSparseMatrix
+[ RUN      ] BlockRandomAccessSparseMatrix.GetCell
+[       OK ] BlockRandomAccessSparseMatrix.GetCell (1 ms)
+[----------] 1 test from BlockRandomAccessSparseMatrix (1 ms total)
+
+[----------] 2 tests from BlockRandomAccessSparseMatrixTest
+[ RUN      ] BlockRandomAccessSparseMatrixTest.IntPairToLongOverflow
+[       OK ] BlockRandomAccessSparseMatrixTest.IntPairToLongOverflow (0 ms)
+[ RUN      ] BlockRandomAccessSparseMatrixTest.LongToIntPair
+[       OK ] BlockRandomAccessSparseMatrixTest.LongToIntPair (0 ms)
+[----------] 2 tests from BlockRandomAccessSparseMatrixTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (4 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"block_random_access_sparse_matrix_test" end time: Oct 14 04:44 JST
+"block_random_access_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/76 Testing: block_sparse_matrix_test
+9/76 Test: block_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/block_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"block_sparse_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 7 tests from BlockSparseMatrixTest
+[ RUN      ] BlockSparseMatrixTest.SetZeroTest
+[       OK ] BlockSparseMatrixTest.SetZeroTest (1 ms)
+[ RUN      ] BlockSparseMatrixTest.RightMultiplyTest
+[       OK ] BlockSparseMatrixTest.RightMultiplyTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.LeftMultiplyTest
+[       OK ] BlockSparseMatrixTest.LeftMultiplyTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.SquaredColumnNormTest
+[       OK ] BlockSparseMatrixTest.SquaredColumnNormTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.ToDenseMatrixTest
+[       OK ] BlockSparseMatrixTest.ToDenseMatrixTest (0 ms)
+[ RUN      ] BlockSparseMatrixTest.AppendRows
+[       OK ] BlockSparseMatrixTest.AppendRows (0 ms)
+[ RUN      ] BlockSparseMatrixTest.AppendAndDeleteBlockDiagonalMatrix
+[       OK ] BlockSparseMatrixTest.AppendAndDeleteBlockDiagonalMatrix (0 ms)
+[----------] 7 tests from BlockSparseMatrixTest (4 ms total)
+
+[----------] 1 test from BlockSparseMatrix
+[ RUN      ] BlockSparseMatrix.CreateDiagonalMatrix
+[       OK ] BlockSparseMatrix.CreateDiagonalMatrix (0 ms)
+[----------] 1 test from BlockSparseMatrix (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test cases ran. (7 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"block_sparse_matrix_test" end time: Oct 14 04:44 JST
+"block_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/76 Testing: c_api_test
+10/76 Test: c_api_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/c_api_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"c_api_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from C_API
+[ RUN      ] C_API.SimpleEndToEndTest
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.211734e+02    0.00e+00    3.61e+02   0.00e+00   0.00e+00  1.00e+04        0    4.79e-04    1.75e-02
+   1  2.334822e+03   -2.21e+03    0.00e+00   7.52e-01  -1.87e+01  5.00e+03        1    6.21e-03    2.43e-02
+   2  2.331438e+03   -2.21e+03    0.00e+00   7.51e-01  -1.86e+01  1.25e+03        1    3.29e-04    2.50e-02
+   3  2.311313e+03   -2.19e+03    0.00e+00   7.48e-01  -1.85e+01  1.56e+02        1    3.45e-04    2.57e-02
+   4  2.137268e+03   -2.02e+03    0.00e+00   7.22e-01  -1.70e+01  9.77e+00        1    3.05e-04    2.63e-02
+   5  8.553131e+02   -7.34e+02    0.00e+00   5.78e-01  -6.32e+00  3.05e-01        1    3.07e-04    2.69e-02
+   6  3.306595e+01    8.81e+01    4.10e+02   3.18e-01   1.37e+00  9.16e-01        1    6.93e-04    2.78e-02
+   7  6.426770e+00    2.66e+01    1.81e+02   1.29e-01   1.10e+00  2.75e+00        1    5.63e-04    2.87e-02
+   8  3.344546e+00    3.08e+00    5.51e+01   3.05e-02   1.03e+00  8.24e+00        1    5.61e-04    2.97e-02
+   9  1.987485e+00    1.36e+00    2.33e+01   8.87e-02   9.94e-01  2.47e+01        1    5.52e-04    3.05e-02
+  10  1.211585e+00    7.76e-01    8.22e+00   1.05e-01   9.89e-01  7.42e+01        1    5.51e-04    3.14e-02
+  11  1.063265e+00    1.48e-01    1.44e+00   6.06e-02   9.97e-01  2.22e+02        1    5.42e-04    3.22e-02
+  12  1.056795e+00    6.47e-03    1.18e-01   1.47e-02   1.00e+00  6.67e+02        1    5.53e-04    3.30e-02
+  13  1.056751e+00    4.39e-05    3.79e-03   1.28e-03   1.00e+00  2.00e+03        1    5.51e-04    3.39e-02
+
+Solver Summary (v 1.13.0-eigen-(3.3.2)-lapack-suitesparse-(4.5.4)-cxsparse-(3.1.9)-no_openmp)
+
+                                     Original                  Reduced
+Parameter blocks                            2                        2
+Parameters                                  2                        2
+Residual blocks                            67                       67
+Residual                                   67                       67
+
+Minimizer                        TRUST_REGION
+
+Dense linear algebra library            EIGEN
+Trust region strategy     LEVENBERG_MARQUARDT
+
+                                        Given                     Used
+Linear solver                        DENSE_QR                 DENSE_QR
+Threads                                     1                        1
+Linear solver threads                       1                        1
+Linear solver ordering              AUTOMATIC                        2
+
+Cost:
+Initial                          1.211734e+02
+Final                            1.056751e+00
+Change                           1.201167e+02
+
+Minimizer iterations                       14
+Successful steps                            9
+Unsuccessful steps                          5
+
+Time (in seconds):
+Preprocessor                         0.017036
+
+  Residual evaluation                0.005668
+  Jacobian evaluation                0.002057
+  Linear solver                      0.003716
+Minimizer                            0.017483
+
+Postprocessor                        0.000108
+Total                                0.034635
+
+Termination:                      CONVERGENCE (Function tolerance reached. |cost_change|/cost: 3.541695e-08 <= 1.000000e-06)
+
+[       OK ] C_API.SimpleEndToEndTest (39 ms)
+[ RUN      ] C_API.LossFunctions
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  3.814919e+02    0.00e+00    3.86e+02   0.00e+00   0.00e+00  1.00e+04        0    4.73e-04    6.34e-04
+   1  3.554425e+02    2.60e+01    2.91e+02   1.48e-01   8.90e-01  1.91e+04        1    8.20e-04    1.84e-03
+   2  3.509212e+02    4.52e+00    1.68e+01   4.73e-02   1.01e+00  5.72e+04        1    7.00e-04    2.87e-03
+   3  3.509014e+02    1.98e-02    1.09e-01   6.58e-03   1.00e+00  1.72e+05        1    6.93e-04    3.87e-03
+
+Solver Summary (v 1.13.0-eigen-(3.3.2)-lapack-suitesparse-(4.5.4)-cxsparse-(3.1.9)-no_openmp)
+
+                                     Original                  Reduced
+Parameter blocks                            2                        2
+Parameters                                  2                        2
+Residual blocks                            67                       67
+Residual                                   67                       67
+
+Minimizer                        TRUST_REGION
+
+Dense linear algebra library            EIGEN
+Trust region strategy     LEVENBERG_MARQUARDT
+
+                                        Given                     Used
+Linear solver                        DENSE_QR                 DENSE_QR
+Threads                                     1                        1
+Linear solver threads                       1                        1
+Linear solver ordering              AUTOMATIC                        2
+
+Cost:
+Initial                          3.814919e+02
+Final                            3.509014e+02
+Change                           3.059049e+01
+
+Minimizer iterations                        4
+Successful steps                            4
+Unsuccessful steps                          0
+
+Time (in seconds):
+Preprocessor                         0.000160
+
+  Residual evaluation                0.000817
+  Jacobian evaluation                0.001306
+  Linear solver                      0.000503
+Minimizer                            0.004435
+
+Postprocessor                        0.000050
+Total                                0.004650
+
+Termination:                      CONVERGENCE (Function tolerance reached. |cost_change|/cost: 2.336661e-09 <= 1.000000e-06)
+
+[       OK ] C_API.LossFunctions (5 ms)
+[----------] 2 tests from C_API (48 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (49 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"c_api_test" end time: Oct 14 04:44 JST
+"c_api_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/76 Testing: canonical_views_clustering_test
+11/76 Test: canonical_views_clustering_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/canonical_views_clustering_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"canonical_views_clustering_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from CanonicalViewsTest
+[ RUN      ] CanonicalViewsTest.ComputeCanonicalViewsTest
+[       OK ] CanonicalViewsTest.ComputeCanonicalViewsTest (1 ms)
+[ RUN      ] CanonicalViewsTest.SizePenaltyTest
+[       OK ] CanonicalViewsTest.SizePenaltyTest (0 ms)
+[ RUN      ] CanonicalViewsTest.ViewScoreTest
+[       OK ] CanonicalViewsTest.ViewScoreTest (0 ms)
+[ RUN      ] CanonicalViewsTest.SimilarityPenaltyTest
+[       OK ] CanonicalViewsTest.SimilarityPenaltyTest (0 ms)
+[----------] 4 tests from CanonicalViewsTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"canonical_views_clustering_test" end time: Oct 14 04:44 JST
+"canonical_views_clustering_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/76 Testing: compressed_col_sparse_matrix_utils_test
+12/76 Test: compressed_col_sparse_matrix_utils_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/compressed_col_sparse_matrix_utils_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"compressed_col_sparse_matrix_utils_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from _
+[ RUN      ] _.BlockPermutationToScalarPermutation
+[       OK ] _.BlockPermutationToScalarPermutation (0 ms)
+[ RUN      ] _.ScalarMatrixToBlockMatrix
+[       OK ] _.ScalarMatrixToBlockMatrix (0 ms)
+[----------] 2 tests from _ (1 ms total)
+
+[----------] 3 tests from SolveUpperTriangularTest
+[ RUN      ] SolveUpperTriangularTest.SolveInPlace
+[       OK ] SolveUpperTriangularTest.SolveInPlace (0 ms)
+[ RUN      ] SolveUpperTriangularTest.TransposeSolveInPlace
+[       OK ] SolveUpperTriangularTest.TransposeSolveInPlace (0 ms)
+[ RUN      ] SolveUpperTriangularTest.RTRSolveWithSparseRHS
+[       OK ] SolveUpperTriangularTest.RTRSolveWithSparseRHS (0 ms)
+[----------] 3 tests from SolveUpperTriangularTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 2 test cases ran. (4 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"compressed_col_sparse_matrix_utils_test" end time: Oct 14 04:44 JST
+"compressed_col_sparse_matrix_utils_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/76 Testing: compressed_row_sparse_matrix_test
+13/76 Test: compressed_row_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/compressed_row_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"compressed_row_sparse_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 13 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 9 tests from CompressedRowSparseMatrixTest
+[ RUN      ] CompressedRowSparseMatrixTest.RightMultiply
+[       OK ] CompressedRowSparseMatrixTest.RightMultiply (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.LeftMultiply
+[       OK ] CompressedRowSparseMatrixTest.LeftMultiply (1 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ColumnNorm
+[       OK ] CompressedRowSparseMatrixTest.ColumnNorm (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.Scale
+[       OK ] CompressedRowSparseMatrixTest.Scale (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.DeleteRows
+[       OK ] CompressedRowSparseMatrixTest.DeleteRows (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.AppendRows
+[       OK ] CompressedRowSparseMatrixTest.AppendRows (1 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.AppendAndDeleteBlockDiagonalMatrix
+[       OK ] CompressedRowSparseMatrixTest.AppendAndDeleteBlockDiagonalMatrix (6 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ToDenseMatrix
+[       OK ] CompressedRowSparseMatrixTest.ToDenseMatrix (0 ms)
+[ RUN      ] CompressedRowSparseMatrixTest.ToCRSMatrix
+[       OK ] CompressedRowSparseMatrixTest.ToCRSMatrix (0 ms)
+[----------] 9 tests from CompressedRowSparseMatrixTest (11 ms total)
+
+[----------] 4 tests from CompressedRowSparseMatrix
+[ RUN      ] CompressedRowSparseMatrix.CreateBlockDiagonalMatrix
+[       OK ] CompressedRowSparseMatrix.CreateBlockDiagonalMatrix (0 ms)
+[ RUN      ] CompressedRowSparseMatrix.Transpose
+[       OK ] CompressedRowSparseMatrix.Transpose (0 ms)
+[ RUN      ] CompressedRowSparseMatrix.FromTripletSparseMatrix
+[       OK ] CompressedRowSparseMatrix.FromTripletSparseMatrix (1 ms)
+[ RUN      ] CompressedRowSparseMatrix.FromTripletSparseMatrixTransposed
+[       OK ] CompressedRowSparseMatrix.FromTripletSparseMatrixTransposed (1 ms)
+[----------] 4 tests from CompressedRowSparseMatrix (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 2 test cases ran. (17 ms total)
+[  PASSED  ] 13 tests.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"compressed_row_sparse_matrix_test" end time: Oct 14 04:44 JST
+"compressed_row_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/76 Testing: conditioned_cost_function_test
+14/76 Test: conditioned_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/conditioned_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"conditioned_cost_function_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from CostFunctionTest
+[ RUN      ] CostFunctionTest.ConditionedCostFunction
+[       OK ] CostFunctionTest.ConditionedCostFunction (0 ms)
+[----------] 1 test from CostFunctionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"conditioned_cost_function_test" end time: Oct 14 04:44 JST
+"conditioned_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/76 Testing: conjugate_gradients_solver_test
+15/76 Test: conjugate_gradients_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/conjugate_gradients_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"conjugate_gradients_solver_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from ConjugateGradientTest
+[ RUN      ] ConjugateGradientTest.Solves3x3IdentitySystem
+[       OK ] ConjugateGradientTest.Solves3x3IdentitySystem (9 ms)
+[----------] 1 test from ConjugateGradientTest (9 ms total)
+
+[----------] 1 test from ConjuateGradientTest
+[ RUN      ] ConjuateGradientTest.Solves3x3SymmetricSystem
+[       OK ] ConjuateGradientTest.Solves3x3SymmetricSystem (0 ms)
+[----------] 1 test from ConjuateGradientTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 2 test cases ran. (12 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"conjugate_gradients_solver_test" end time: Oct 14 04:44 JST
+"conjugate_gradients_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/76 Testing: corrector_test
+16/76 Test: corrector_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/corrector_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"corrector_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 7 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 7 tests from Corrector
+[ RUN      ] Corrector.ZeroGradientDeathTest
+[       OK ] Corrector.ZeroGradientDeathTest (33 ms)
+[ RUN      ] Corrector.NegativeGradientDeathTest
+[       OK ] Corrector.NegativeGradientDeathTest (30 ms)
+[ RUN      ] Corrector.ScalarCorrection
+[       OK ] Corrector.ScalarCorrection (0 ms)
+[ RUN      ] Corrector.ScalarCorrectionZeroResidual
+[       OK ] Corrector.ScalarCorrectionZeroResidual (0 ms)
+[ RUN      ] Corrector.ScalarCorrectionAlphaClamped
+[       OK ] Corrector.ScalarCorrectionAlphaClamped (0 ms)
+[ RUN      ] Corrector.MultidimensionalGaussNewtonApproximation
+[       OK ] Corrector.MultidimensionalGaussNewtonApproximation (133 ms)
+[ RUN      ] Corrector.MultidimensionalGaussNewtonApproximationZeroResidual
+[       OK ] Corrector.MultidimensionalGaussNewtonApproximationZeroResidual (103 ms)
+[----------] 7 tests from Corrector (301 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 1 test case ran. (302 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.39 sec
+----------------------------------------------------------
+Test Passed.
+"corrector_test" end time: Oct 14 04:44 JST
+"corrector_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/76 Testing: cost_function_to_functor_test
+17/76 Test: cost_function_to_functor_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/cost_function_to_functor_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"cost_function_to_functor_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 12 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 12 tests from CostFunctionToFunctor
+[ RUN      ] CostFunctionToFunctor.OneParameterBlock
+[       OK ] CostFunctionToFunctor.OneParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.TwoParameterBlock
+[       OK ] CostFunctionToFunctor.TwoParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.ThreeParameterBlock
+[       OK ] CostFunctionToFunctor.ThreeParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.FourParameterBlock
+[       OK ] CostFunctionToFunctor.FourParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.FiveParameterBlock
+[       OK ] CostFunctionToFunctor.FiveParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.SixParameterBlock
+[       OK ] CostFunctionToFunctor.SixParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.SevenParameterBlock
+[       OK ] CostFunctionToFunctor.SevenParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.EightParameterBlock
+[       OK ] CostFunctionToFunctor.EightParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.NineParameterBlock
+[       OK ] CostFunctionToFunctor.NineParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.TenParameterBlock
+[       OK ] CostFunctionToFunctor.TenParameterBlock (0 ms)
+[ RUN      ] CostFunctionToFunctor.DynamicNumberOfResiduals
+[       OK ] CostFunctionToFunctor.DynamicNumberOfResiduals (0 ms)
+[ RUN      ] CostFunctionToFunctor.DynamicCostFunctionToFunctor
+[       OK ] CostFunctionToFunctor.DynamicCostFunctionToFunctor (0 ms)
+[----------] 12 tests from CostFunctionToFunctor (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 1 test case ran. (9 ms total)
+[  PASSED  ] 12 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"cost_function_to_functor_test" end time: Oct 14 04:44 JST
+"cost_function_to_functor_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/76 Testing: covariance_test
+18/76 Test: covariance_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/covariance_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"covariance_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 14 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from CovarianceImpl
+[ RUN      ] CovarianceImpl.ComputeCovarianceSparsity
+[       OK ] CovarianceImpl.ComputeCovarianceSparsity (10 ms)
+[ RUN      ] CovarianceImpl.ComputeCovarianceSparsityWithConstantParameterBlock
+[       OK ] CovarianceImpl.ComputeCovarianceSparsityWithConstantParameterBlock (0 ms)
+[ RUN      ] CovarianceImpl.ComputeCovarianceSparsityWithFreeParameterBlock
+[       OK ] CovarianceImpl.ComputeCovarianceSparsityWithFreeParameterBlock (0 ms)
+[----------] 3 tests from CovarianceImpl (12 ms total)
+
+[----------] 10 tests from CovarianceTest
+[ RUN      ] CovarianceTest.NormalBehavior
+[       OK ] CovarianceTest.NormalBehavior (135 ms)
+[ RUN      ] CovarianceTest.ConstantParameterBlock
+[       OK ] CovarianceTest.ConstantParameterBlock (70 ms)
+[ RUN      ] CovarianceTest.LocalParameterization
+[       OK ] CovarianceTest.LocalParameterization (91 ms)
+[ RUN      ] CovarianceTest.LocalParameterizationInTangentSpace
+[       OK ] CovarianceTest.LocalParameterizationInTangentSpace (85 ms)
+[ RUN      ] CovarianceTest.LocalParameterizationInTangentSpaceWithConstantBlocks
+[       OK ] CovarianceTest.LocalParameterizationInTangentSpaceWithConstantBlocks (40 ms)
+[ RUN      ] CovarianceTest.TruncatedRank
+[       OK ] CovarianceTest.TruncatedRank (47 ms)
+[ RUN      ] CovarianceTest.DenseCovarianceMatrixFromSetOfParameters
+[       OK ] CovarianceTest.DenseCovarianceMatrixFromSetOfParameters (93 ms)
+[ RUN      ] CovarianceTest.DenseCovarianceMatrixFromSetOfParametersThreaded
+[       OK ] CovarianceTest.DenseCovarianceMatrixFromSetOfParametersThreaded (171 ms)
+[ RUN      ] CovarianceTest.DenseCovarianceMatrixFromSetOfParametersInTangentSpace
+[       OK ] CovarianceTest.DenseCovarianceMatrixFromSetOfParametersInTangentSpace (86 ms)
+[ RUN      ] CovarianceTest.ComputeCovarianceFailure
+[       OK ] CovarianceTest.ComputeCovarianceFailure (66 ms)
+[----------] 10 tests from CovarianceTest (888 ms total)
+
+[----------] 1 test from RankDeficientCovarianceTest
+[ RUN      ] RankDeficientCovarianceTest.AutomaticTruncation
+[       OK ] RankDeficientCovarianceTest.AutomaticTruncation (20 ms)
+[----------] 1 test from RankDeficientCovarianceTest (20 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 3 test cases ran. (924 ms total)
+[  PASSED  ] 14 tests.
+<end of output>
+Test time =   1.03 sec
+----------------------------------------------------------
+Test Passed.
+"covariance_test" end time: Oct 14 04:44 JST
+"covariance_test" time elapsed: 00:00:01
+----------------------------------------------------------
+
+19/76 Testing: cubic_interpolation_test
+19/76 Test: cubic_interpolation_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/cubic_interpolation_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"cubic_interpolation_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 23 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from Grid1D
+[ RUN      ] Grid1D.OneDataDimension
+[       OK ] Grid1D.OneDataDimension (0 ms)
+[ RUN      ] Grid1D.OneDataDimensionOutOfBounds
+[       OK ] Grid1D.OneDataDimensionOutOfBounds (0 ms)
+[ RUN      ] Grid1D.TwoDataDimensionIntegerDataInterleaved
+[       OK ] Grid1D.TwoDataDimensionIntegerDataInterleaved (0 ms)
+[ RUN      ] Grid1D.TwoDataDimensionIntegerDataStacked
+[       OK ] Grid1D.TwoDataDimensionIntegerDataStacked (0 ms)
+[----------] 4 tests from Grid1D (2 ms total)
+
+[----------] 6 tests from Grid2D
+[ RUN      ] Grid2D.OneDataDimensionRowMajor
+[       OK ] Grid2D.OneDataDimensionRowMajor (0 ms)
+[ RUN      ] Grid2D.OneDataDimensionRowMajorOutOfBounds
+[       OK ] Grid2D.OneDataDimensionRowMajorOutOfBounds (0 ms)
+[ RUN      ] Grid2D.TwoDataDimensionRowMajorInterleaved
+[       OK ] Grid2D.TwoDataDimensionRowMajorInterleaved (0 ms)
+[ RUN      ] Grid2D.TwoDataDimensionRowMajorStacked
+[       OK ] Grid2D.TwoDataDimensionRowMajorStacked (0 ms)
+[ RUN      ] Grid2D.TwoDataDimensionColMajorInterleaved
+[       OK ] Grid2D.TwoDataDimensionColMajorInterleaved (0 ms)
+[ RUN      ] Grid2D.TwoDataDimensionColMajorStacked
+[       OK ] Grid2D.TwoDataDimensionColMajorStacked (0 ms)
+[----------] 6 tests from Grid2D (2 ms total)
+
+[----------] 3 tests from CubicInterpolatorTest
+[ RUN      ] CubicInterpolatorTest.ConstantFunction
+[       OK ] CubicInterpolatorTest.ConstantFunction (0 ms)
+[ RUN      ] CubicInterpolatorTest.LinearFunction
+[       OK ] CubicInterpolatorTest.LinearFunction (0 ms)
+[ RUN      ] CubicInterpolatorTest.QuadraticFunction
+[       OK ] CubicInterpolatorTest.QuadraticFunction (0 ms)
+[----------] 3 tests from CubicInterpolatorTest (2 ms total)
+
+[----------] 1 test from CubicInterpolator
+[ RUN      ] CubicInterpolator.JetEvaluation
+[       OK ] CubicInterpolator.JetEvaluation (0 ms)
+[----------] 1 test from CubicInterpolator (0 ms total)
+
+[----------] 8 tests from BiCubicInterpolatorTest
+[ RUN      ] BiCubicInterpolatorTest.ZeroFunction
+[       OK ] BiCubicInterpolatorTest.ZeroFunction (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree00Function
+[       OK ] BiCubicInterpolatorTest.Degree00Function (78 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree01Function
+[       OK ] BiCubicInterpolatorTest.Degree01Function (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree10Function
+[       OK ] BiCubicInterpolatorTest.Degree10Function (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree11Function
+[       OK ] BiCubicInterpolatorTest.Degree11Function (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree12Function
+[       OK ] BiCubicInterpolatorTest.Degree12Function (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree21Function
+[       OK ] BiCubicInterpolatorTest.Degree21Function (77 ms)
+[ RUN      ] BiCubicInterpolatorTest.Degree22Function
+[       OK ] BiCubicInterpolatorTest.Degree22Function (79 ms)
+[----------] 8 tests from BiCubicInterpolatorTest (624 ms total)
+
+[----------] 1 test from BiCubicInterpolator
+[ RUN      ] BiCubicInterpolator.JetEvaluation
+[       OK ] BiCubicInterpolator.JetEvaluation (0 ms)
+[----------] 1 test from BiCubicInterpolator (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 23 tests from 6 test cases ran. (634 ms total)
+[  PASSED  ] 23 tests.
+<end of output>
+Test time =   0.73 sec
+----------------------------------------------------------
+Test Passed.
+"cubic_interpolation_test" end time: Oct 14 04:44 JST
+"cubic_interpolation_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/76 Testing: dense_linear_solver_test
+20/76 Test: dense_linear_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dense_linear_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dense_linear_solver_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 16 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 16 tests from DenseLinearSolver/DenseLinearSolverTest
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Regularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Regularized_0 (12 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Regularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Regularized_1 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Unregularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Unregularized_0 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Unregularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_EIGEN_Unregularized_1 (1 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Regularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Regularized_0 (29 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Regularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Regularized_1 (1 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Unregularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Unregularized_0 (1 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Unregularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_QR_LAPACK_Unregularized_1 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Regularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Regularized_0 (6 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Regularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Regularized_1 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Unregularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Unregularized_0 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Unregularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_EIGEN_Unregularized_1 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Regularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Regularized_0 (7 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Regularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Regularized_1 (1 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Unregularized_0
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Unregularized_0 (0 ms)
+[ RUN      ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Unregularized_1
+[       OK ] DenseLinearSolver/DenseLinearSolverTest._/DENSE_NORMAL_CHOLESKY_LAPACK_Unregularized_1 (0 ms)
+[----------] 16 tests from DenseLinearSolver/DenseLinearSolverTest (63 ms total)
+
+[----------] Global test environment tear-down
+[==========] 16 tests from 1 test case ran. (65 ms total)
+[  PASSED  ] 16 tests.
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"dense_linear_solver_test" end time: Oct 14 04:44 JST
+"dense_linear_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/76 Testing: dense_sparse_matrix_test
+21/76 Test: dense_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dense_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dense_sparse_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from DenseSparseMatrixTest
+[ RUN      ] DenseSparseMatrixTest.RightMultiply
+[       OK ] DenseSparseMatrixTest.RightMultiply (1 ms)
+[ RUN      ] DenseSparseMatrixTest.LeftMultiply
+[       OK ] DenseSparseMatrixTest.LeftMultiply (0 ms)
+[ RUN      ] DenseSparseMatrixTest.ColumnNorm
+[       OK ] DenseSparseMatrixTest.ColumnNorm (0 ms)
+[ RUN      ] DenseSparseMatrixTest.Scale
+[       OK ] DenseSparseMatrixTest.Scale (0 ms)
+[ RUN      ] DenseSparseMatrixTest.ToDenseMatrix
+[       OK ] DenseSparseMatrixTest.ToDenseMatrix (0 ms)
+[----------] 5 tests from DenseSparseMatrixTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"dense_sparse_matrix_test" end time: Oct 14 04:44 JST
+"dense_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/76 Testing: detect_structure_test
+22/76 Test: detect_structure_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/detect_structure_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"detect_structure_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from DetectStructure
+[ RUN      ] DetectStructure.EverythingStatic
+[       OK ] DetectStructure.EverythingStatic (0 ms)
+[ RUN      ] DetectStructure.DynamicRow
+[       OK ] DetectStructure.DynamicRow (0 ms)
+[ RUN      ] DetectStructure.DynamicFBlockDifferentRows
+[       OK ] DetectStructure.DynamicFBlockDifferentRows (0 ms)
+[ RUN      ] DetectStructure.DynamicEBlock
+[       OK ] DetectStructure.DynamicEBlock (1 ms)
+[ RUN      ] DetectStructure.DynamicFBlockSameRow
+[       OK ] DetectStructure.DynamicFBlockSameRow (0 ms)
+[----------] 5 tests from DetectStructure (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"detect_structure_test" end time: Oct 14 04:44 JST
+"detect_structure_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/76 Testing: dogleg_strategy_test
+23/76 Test: dogleg_strategy_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dogleg_strategy_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dogleg_strategy_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 6 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from DoglegStrategyFixtureEllipse
+[ RUN      ] DoglegStrategyFixtureEllipse.TrustRegionObeyedTraditional
+[       OK ] DoglegStrategyFixtureEllipse.TrustRegionObeyedTraditional (12 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.TrustRegionObeyedSubspace
+[       OK ] DoglegStrategyFixtureEllipse.TrustRegionObeyedSubspace (1 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.CorrectGaussNewtonStep
+[       OK ] DoglegStrategyFixtureEllipse.CorrectGaussNewtonStep (0 ms)
+[ RUN      ] DoglegStrategyFixtureEllipse.ValidSubspaceBasis
+[       OK ] DoglegStrategyFixtureEllipse.ValidSubspaceBasis (0 ms)
+[----------] 4 tests from DoglegStrategyFixtureEllipse (15 ms total)
+
+[----------] 2 tests from DoglegStrategyFixtureValley
+[ RUN      ] DoglegStrategyFixtureValley.CorrectStepLocalOptimumAlongGradient
+[       OK ] DoglegStrategyFixtureValley.CorrectStepLocalOptimumAlongGradient (0 ms)
+[ RUN      ] DoglegStrategyFixtureValley.CorrectStepGlobalOptimumAlongGradient
+[       OK ] DoglegStrategyFixtureValley.CorrectStepGlobalOptimumAlongGradient (0 ms)
+[----------] 2 tests from DoglegStrategyFixtureValley (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 2 test cases ran. (19 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"dogleg_strategy_test" end time: Oct 14 04:44 JST
+"dogleg_strategy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/76 Testing: dynamic_autodiff_cost_function_test
+24/76 Test: dynamic_autodiff_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dynamic_autodiff_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dynamic_autodiff_cost_function_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 12 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from DynamicAutodiffCostFunctionTest
+[ RUN      ] DynamicAutodiffCostFunctionTest.TestResiduals
+[       OK ] DynamicAutodiffCostFunctionTest.TestResiduals (0 ms)
+[ RUN      ] DynamicAutodiffCostFunctionTest.TestJacobian
+[       OK ] DynamicAutodiffCostFunctionTest.TestJacobian (0 ms)
+[ RUN      ] DynamicAutodiffCostFunctionTest.JacobianWithFirstParameterBlockConstant
+[       OK ] DynamicAutodiffCostFunctionTest.JacobianWithFirstParameterBlockConstant (0 ms)
+[ RUN      ] DynamicAutodiffCostFunctionTest.JacobianWithSecondParameterBlockConstant
+[       OK ] DynamicAutodiffCostFunctionTest.JacobianWithSecondParameterBlockConstant (0 ms)
+[----------] 4 tests from DynamicAutodiffCostFunctionTest (3 ms total)
+
+[----------] 4 tests from ThreeParameterCostFunctorTest
+[ RUN      ] ThreeParameterCostFunctorTest.TestThreeParameterResiduals
+[       OK ] ThreeParameterCostFunctorTest.TestThreeParameterResiduals (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.TestThreeParameterJacobian
+[       OK ] ThreeParameterCostFunctorTest.TestThreeParameterJacobian (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithFirstAndLastParameterBlockConstant
+[       OK ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithFirstAndLastParameterBlockConstant (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithSecondParameterBlockConstant
+[       OK ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithSecondParameterBlockConstant (0 ms)
+[----------] 4 tests from ThreeParameterCostFunctorTest (2 ms total)
+
+[----------] 4 tests from SixParameterCostFunctorTest
+[ RUN      ] SixParameterCostFunctorTest.TestSixParameterResiduals
+[       OK ] SixParameterCostFunctorTest.TestSixParameterResiduals (0 ms)
+[ RUN      ] SixParameterCostFunctorTest.TestSixParameterJacobian
+[       OK ] SixParameterCostFunctorTest.TestSixParameterJacobian (0 ms)
+[ RUN      ] SixParameterCostFunctorTest.TestSixParameterJacobianVVCVVC
+[       OK ] SixParameterCostFunctorTest.TestSixParameterJacobianVVCVVC (0 ms)
+[ RUN      ] SixParameterCostFunctorTest.TestSixParameterJacobianVCCVCV
+[       OK ] SixParameterCostFunctorTest.TestSixParameterJacobianVCCVCV (0 ms)
+[----------] 4 tests from SixParameterCostFunctorTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 12 tests from 3 test cases ran. (8 ms total)
+[  PASSED  ] 12 tests.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_autodiff_cost_function_test" end time: Oct 14 04:44 JST
+"dynamic_autodiff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/76 Testing: dynamic_compressed_row_sparse_matrix_test
+25/76 Test: dynamic_compressed_row_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dynamic_compressed_row_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dynamic_compressed_row_sparse_matrix_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from DynamicCompressedRowSparseMatrixTest
+[ RUN      ] DynamicCompressedRowSparseMatrixTest.Initialization
+[       OK ] DynamicCompressedRowSparseMatrixTest.Initialization (0 ms)
+[ RUN      ] DynamicCompressedRowSparseMatrixTest.InsertEntryAndFinalize
+[       OK ] DynamicCompressedRowSparseMatrixTest.InsertEntryAndFinalize (0 ms)
+[ RUN      ] DynamicCompressedRowSparseMatrixTest.ClearRows
+[       OK ] DynamicCompressedRowSparseMatrixTest.ClearRows (0 ms)
+[----------] 3 tests from DynamicCompressedRowSparseMatrixTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_compressed_row_sparse_matrix_test" end time: Oct 14 04:44 JST
+"dynamic_compressed_row_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/76 Testing: dynamic_numeric_diff_cost_function_test
+26/76 Test: dynamic_numeric_diff_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dynamic_numeric_diff_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dynamic_numeric_diff_cost_function_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from DynamicNumericdiffCostFunctionTest
+[ RUN      ] DynamicNumericdiffCostFunctionTest.TestResiduals
+[       OK ] DynamicNumericdiffCostFunctionTest.TestResiduals (0 ms)
+[ RUN      ] DynamicNumericdiffCostFunctionTest.TestJacobian
+[       OK ] DynamicNumericdiffCostFunctionTest.TestJacobian (1 ms)
+[ RUN      ] DynamicNumericdiffCostFunctionTest.JacobianWithFirstParameterBlockConstant
+[       OK ] DynamicNumericdiffCostFunctionTest.JacobianWithFirstParameterBlockConstant (0 ms)
+[ RUN      ] DynamicNumericdiffCostFunctionTest.JacobianWithSecondParameterBlockConstant
+[       OK ] DynamicNumericdiffCostFunctionTest.JacobianWithSecondParameterBlockConstant (0 ms)
+[----------] 4 tests from DynamicNumericdiffCostFunctionTest (2 ms total)
+
+[----------] 4 tests from ThreeParameterCostFunctorTest
+[ RUN      ] ThreeParameterCostFunctorTest.TestThreeParameterResiduals
+[       OK ] ThreeParameterCostFunctorTest.TestThreeParameterResiduals (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.TestThreeParameterJacobian
+[       OK ] ThreeParameterCostFunctorTest.TestThreeParameterJacobian (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithFirstAndLastParameterBlockConstant
+[       OK ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithFirstAndLastParameterBlockConstant (0 ms)
+[ RUN      ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithSecondParameterBlockConstant
+[       OK ] ThreeParameterCostFunctorTest.ThreeParameterJacobianWithSecondParameterBlockConstant (0 ms)
+[----------] 4 tests from ThreeParameterCostFunctorTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test cases ran. (5 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_numeric_diff_cost_function_test" end time: Oct 14 04:44 JST
+"dynamic_numeric_diff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/76 Testing: dynamic_sparse_normal_cholesky_solver_test
+27/76 Test: dynamic_sparse_normal_cholesky_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dynamic_sparse_normal_cholesky_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dynamic_sparse_normal_cholesky_solver_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from DynamicSparseNormalCholeskySolverTest
+[ RUN      ] DynamicSparseNormalCholeskySolverTest.SuiteSparse
+[       OK ] DynamicSparseNormalCholeskySolverTest.SuiteSparse (23 ms)
+[ RUN      ] DynamicSparseNormalCholeskySolverTest.CXSparse
+[       OK ] DynamicSparseNormalCholeskySolverTest.CXSparse (2 ms)
+[----------] 2 tests from DynamicSparseNormalCholeskySolverTest (25 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (26 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_sparse_normal_cholesky_solver_test" end time: Oct 14 04:44 JST
+"dynamic_sparse_normal_cholesky_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/76 Testing: dynamic_sparsity_test
+28/76 Test: dynamic_sparsity_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/dynamic_sparsity_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"dynamic_sparsity_test" start time: Oct 14 04:44 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from DynamicSparsity
+[ RUN      ] DynamicSparsity.StaticAndDynamicSparsityProduceSameSolution
+[       OK ] DynamicSparsity.StaticAndDynamicSparsityProduceSameSolution (75656 ms)
+[----------] 1 test from DynamicSparsity (75657 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (75659 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =  75.77 sec
+----------------------------------------------------------
+Test Passed.
+"dynamic_sparsity_test" end time: Oct 14 04:45 JST
+"dynamic_sparsity_test" time elapsed: 00:01:15
+----------------------------------------------------------
+
+29/76 Testing: evaluator_test
+29/76 Test: evaluator_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/evaluator_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"evaluator_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 127 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from Evaluator
+[ RUN      ] Evaluator.EvaluatorRespectsParameterChanges
+[       OK ] Evaluator.EvaluatorRespectsParameterChanges (5 ms)
+[----------] 1 test from Evaluator (5 ms total)
+
+[----------] 126 tests from LinearSolvers/EvaluatorTest
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/0 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/2 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/3 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/4 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblem/17
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblem/17 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/15 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/16 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/17
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithPermutedParameters/17 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/0 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/17
+[       OK ] LinearSolvers/EvaluatorTest.SingleResidualProblemWithNuisanceParameters/17 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/0 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/2 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/3 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/4 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/5 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/6 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/11 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/12 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/13 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/14 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/15 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/16 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/17
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblem/17 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/0 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/2 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/3 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/6 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/7 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/8 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/9 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/10 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/12 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/13 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/14 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/15 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/16 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/17
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualsWithLocalParameterizations/17 (2 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/0
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/0 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/1
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/1 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/2
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/2 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/3
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/3 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/4
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/4 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/5
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/5 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/6
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/6 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/7
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/7 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/8
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/8 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/9
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/10
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/11
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/11 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/12
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/12 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/13
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/13 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/14
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/14 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/15
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/15 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/16
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/16 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/17
+[       OK ] LinearSolvers/EvaluatorTest.MultipleResidualProblemWithSomeConstantParameters/17 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/0
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/0 (1 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/1
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/1 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/2
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/2 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/3
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/3 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/4
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/4 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/5
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/5 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/6
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/6 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/7
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/7 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/8
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/8 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/9
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/9 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/10
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/10 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/11
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/11 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/12
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/12 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/13
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/13 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/14
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/14 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/15
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/15 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/16
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/16 (0 ms)
+[ RUN      ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/17
+[       OK ] LinearSolvers/EvaluatorTest.EvaluatorAbortsForResidualsThatFailToEvaluate/17 (0 ms)
+[----------] 126 tests from LinearSolvers/EvaluatorTest (126 ms total)
+
+[----------] Global test environment tear-down
+[==========] 127 tests from 2 test cases ran. (133 ms total)
+[  PASSED  ] 127 tests.
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"evaluator_test" end time: Oct 14 04:45 JST
+"evaluator_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/76 Testing: gradient_checker_test
+30/76 Test: gradient_checker_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/gradient_checker_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"gradient_checker_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from GradientChecker
+[ RUN      ] GradientChecker.SmokeTest
+[       OK ] GradientChecker.SmokeTest (13 ms)
+[ RUN      ] GradientChecker.TestCorrectnessWithLocalParameterizations
+E1014 04:45:23.449450  3875 gradient_checking_cost_function.cc:144] Gradient error detected. Terminating solver.
+[       OK ] GradientChecker.TestCorrectnessWithLocalParameterizations (43 ms)
+[----------] 2 tests from GradientChecker (57 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (59 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"gradient_checker_test" end time: Oct 14 04:45 JST
+"gradient_checker_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/76 Testing: gradient_checking_cost_function_test
+31/76 Test: gradient_checking_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/gradient_checking_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"gradient_checking_cost_function_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from GradientCheckingCostFunction
+[ RUN      ] GradientCheckingCostFunction.ResidualsAndJacobiansArePreservedTest
+[       OK ] GradientCheckingCostFunction.ResidualsAndJacobiansArePreservedTest (1 ms)
+[ RUN      ] GradientCheckingCostFunction.SmokeTest
+[       OK ] GradientCheckingCostFunction.SmokeTest (4 ms)
+[----------] 2 tests from GradientCheckingCostFunction (7 ms total)
+
+[----------] 1 test from GradientCheckingProblemImpl
+[ RUN      ] GradientCheckingProblemImpl.ProblemDimensionsMatch
+[       OK ] GradientCheckingProblemImpl.ProblemDimensionsMatch (0 ms)
+[----------] 1 test from GradientCheckingProblemImpl (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 2 test cases ran. (10 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"gradient_checking_cost_function_test" end time: Oct 14 04:45 JST
+"gradient_checking_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/76 Testing: gradient_problem_test
+32/76 Test: gradient_problem_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/gradient_problem_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"gradient_problem_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from GradientProblem
+[ RUN      ] GradientProblem.TakesOwnershipOfFirstOrderFunction
+[       OK ] GradientProblem.TakesOwnershipOfFirstOrderFunction (0 ms)
+[ RUN      ] GradientProblem.EvaluationWithoutParameterizationOrGradient
+[       OK ] GradientProblem.EvaluationWithoutParameterizationOrGradient (1 ms)
+[ RUN      ] GradientProblem.EvalutaionWithParameterizationAndNoGradient
+[       OK ] GradientProblem.EvalutaionWithParameterizationAndNoGradient (0 ms)
+[ RUN      ] GradientProblem.EvaluationWithoutParameterizationAndWithGradient
+[       OK ] GradientProblem.EvaluationWithoutParameterizationAndWithGradient (0 ms)
+[ RUN      ] GradientProblem.EvaluationWithParameterizationAndWithGradient
+[       OK ] GradientProblem.EvaluationWithParameterizationAndWithGradient (0 ms)
+[----------] 5 tests from GradientProblem (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"gradient_problem_test" end time: Oct 14 04:45 JST
+"gradient_problem_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/76 Testing: gradient_problem_solver_test
+33/76 Test: gradient_problem_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/gradient_problem_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"gradient_problem_solver_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from GradientProblemSolver
+[ RUN      ] GradientProblemSolver.SolvesRosenbrockWithDefaultOptions
+[       OK ] GradientProblemSolver.SolvesRosenbrockWithDefaultOptions (17 ms)
+[----------] 1 test from GradientProblemSolver (18 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (19 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"gradient_problem_solver_test" end time: Oct 14 04:45 JST
+"gradient_problem_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/76 Testing: graph_test
+34/76 Test: graph_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/graph_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"graph_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 9 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from Graph
+[ RUN      ] Graph.EmptyGraph
+[       OK ] Graph.EmptyGraph (0 ms)
+[ RUN      ] Graph.AddVertexAndEdge
+[       OK ] Graph.AddVertexAndEdge (0 ms)
+[ RUN      ] Graph.AddVertexIdempotence
+[       OK ] Graph.AddVertexIdempotence (0 ms)
+[ RUN      ] Graph.DieOnNonExistentVertex
+[       OK ] Graph.DieOnNonExistentVertex (31 ms)
+[----------] 4 tests from Graph (34 ms total)
+
+[----------] 5 tests from WeightedGraph
+[ RUN      ] WeightedGraph.EmptyGraph
+[       OK ] WeightedGraph.EmptyGraph (0 ms)
+[ RUN      ] WeightedGraph.AddVertexAndEdge
+[       OK ] WeightedGraph.AddVertexAndEdge (0 ms)
+[ RUN      ] WeightedGraph.AddVertexIdempotence
+[       OK ] WeightedGraph.AddVertexIdempotence (0 ms)
+[ RUN      ] WeightedGraph.DieOnNonExistentVertex
+[       OK ] WeightedGraph.DieOnNonExistentVertex (50 ms)
+[ RUN      ] WeightedGraph.NonExistentEdge
+[       OK ] WeightedGraph.NonExistentEdge (0 ms)
+[----------] 5 tests from WeightedGraph (52 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 2 test cases ran. (87 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"graph_test" end time: Oct 14 04:45 JST
+"graph_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/76 Testing: graph_algorithms_test
+35/76 Test: graph_algorithms_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/graph_algorithms_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"graph_algorithms_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 6 tests from 4 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from IndependentSetOrdering
+[ RUN      ] IndependentSetOrdering.Chain
+[       OK ] IndependentSetOrdering.Chain (0 ms)
+[ RUN      ] IndependentSetOrdering.Star
+[       OK ] IndependentSetOrdering.Star (0 ms)
+[----------] 2 tests from IndependentSetOrdering (2 ms total)
+
+[----------] 2 tests from Degree2MaximumSpanningForest
+[ RUN      ] Degree2MaximumSpanningForest.PreserveWeights
+[       OK ] Degree2MaximumSpanningForest.PreserveWeights (1 ms)
+[ RUN      ] Degree2MaximumSpanningForest.StarGraph
+[       OK ] Degree2MaximumSpanningForest.StarGraph (0 ms)
+[----------] 2 tests from Degree2MaximumSpanningForest (1 ms total)
+
+[----------] 1 test from VertexTotalOrdering
+[ RUN      ] VertexTotalOrdering.TotalOrdering
+[       OK ] VertexTotalOrdering.TotalOrdering (0 ms)
+[----------] 1 test from VertexTotalOrdering (0 ms total)
+
+[----------] 1 test from StableIndependentSet
+[ RUN      ] StableIndependentSet.BreakTies
+[       OK ] StableIndependentSet.BreakTies (0 ms)
+[----------] 1 test from StableIndependentSet (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 4 test cases ran. (7 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"graph_algorithms_test" end time: Oct 14 04:45 JST
+"graph_algorithms_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/76 Testing: householder_vector_test
+36/76 Test: householder_vector_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/householder_vector_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"householder_vector_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from HouseholderVector
+[ RUN      ] HouseholderVector.ZeroPositive
+[       OK ] HouseholderVector.ZeroPositive (0 ms)
+[ RUN      ] HouseholderVector.ZeroNegative
+[       OK ] HouseholderVector.ZeroNegative (0 ms)
+[ RUN      ] HouseholderVector.NearZeroPositive
+[       OK ] HouseholderVector.NearZeroPositive (0 ms)
+[ RUN      ] HouseholderVector.NearZeroNegative
+[       OK ] HouseholderVector.NearZeroNegative (0 ms)
+[ RUN      ] HouseholderVector.NonZeroNegative
+[       OK ] HouseholderVector.NonZeroNegative (0 ms)
+[ RUN      ] HouseholderVector.NonZeroPositive
+[       OK ] HouseholderVector.NonZeroPositive (0 ms)
+[ RUN      ] HouseholderVector.NonZeroPositive_Size4
+[       OK ] HouseholderVector.NonZeroPositive_Size4 (0 ms)
+[ RUN      ] HouseholderVector.LastElementZero
+[       OK ] HouseholderVector.LastElementZero (0 ms)
+[----------] 8 tests from HouseholderVector (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (6 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"householder_vector_test" end time: Oct 14 04:45 JST
+"householder_vector_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/76 Testing: implicit_schur_complement_test
+37/76 Test: implicit_schur_complement_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/implicit_schur_complement_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"implicit_schur_complement_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ImplicitSchurComplementTest
+[ RUN      ] ImplicitSchurComplementTest.SchurMatrixValuesTest
+[       OK ] ImplicitSchurComplementTest.SchurMatrixValuesTest (16 ms)
+[----------] 1 test from ImplicitSchurComplementTest (16 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (18 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"implicit_schur_complement_test" end time: Oct 14 04:45 JST
+"implicit_schur_complement_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/76 Testing: inner_product_computer_test
+38/76 Test: inner_product_computer_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/inner_product_computer_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"inner_product_computer_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from InnerProductComputer
+[ RUN      ] InnerProductComputer.NormalOperation
+[       OK ] InnerProductComputer.NormalOperation (868 ms)
+[ RUN      ] InnerProductComputer.SubMatrix
+[       OK ] InnerProductComputer.SubMatrix (1634 ms)
+[----------] 2 tests from InnerProductComputer (2503 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (2506 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   2.60 sec
+----------------------------------------------------------
+Test Passed.
+"inner_product_computer_test" end time: Oct 14 04:45 JST
+"inner_product_computer_test" time elapsed: 00:00:02
+----------------------------------------------------------
+
+39/76 Testing: invert_psd_matrix_test
+39/76 Test: invert_psd_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/invert_psd_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"invert_psd_matrix_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from InvertPSDMatrix
+[ RUN      ] InvertPSDMatrix.Identity3x3
+[       OK ] InvertPSDMatrix.Identity3x3 (1 ms)
+[ RUN      ] InvertPSDMatrix.FullRank5x5
+[       OK ] InvertPSDMatrix.FullRank5x5 (0 ms)
+[ RUN      ] InvertPSDMatrix.RankDeficient5x5
+[       OK ] InvertPSDMatrix.RankDeficient5x5 (0 ms)
+[----------] 3 tests from InvertPSDMatrix (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"invert_psd_matrix_test" end time: Oct 14 04:45 JST
+"invert_psd_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/76 Testing: is_close_test
+40/76 Test: is_close_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/is_close_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"is_close_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 5 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 5 tests from IsClose
+[ RUN      ] IsClose.BothParametersPositive
+[       OK ] IsClose.BothParametersPositive (0 ms)
+[ RUN      ] IsClose.BothParametersNegative
+[       OK ] IsClose.BothParametersNegative (0 ms)
+[ RUN      ] IsClose.ParametersHaveMixedSigns
+[       OK ] IsClose.ParametersHaveMixedSigns (0 ms)
+[ RUN      ] IsClose.OneParameterZero
+[       OK ] IsClose.OneParameterZero (0 ms)
+[ RUN      ] IsClose.BothParametersZero
+[       OK ] IsClose.BothParametersZero (0 ms)
+[----------] 5 tests from IsClose (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 5 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"is_close_test" end time: Oct 14 04:45 JST
+"is_close_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/76 Testing: iterative_schur_complement_solver_test
+41/76 Test: iterative_schur_complement_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/iterative_schur_complement_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"iterative_schur_complement_solver_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from IterativeSchurComplementSolverTest
+[ RUN      ] IterativeSchurComplementSolverTest.NormalProblem
+[       OK ] IterativeSchurComplementSolverTest.NormalProblem (31 ms)
+[ RUN      ] IterativeSchurComplementSolverTest.ProblemWithNoFBlocks
+[       OK ] IterativeSchurComplementSolverTest.ProblemWithNoFBlocks (0 ms)
+[----------] 2 tests from IterativeSchurComplementSolverTest (32 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (35 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"iterative_schur_complement_solver_test" end time: Oct 14 04:45 JST
+"iterative_schur_complement_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/76 Testing: jet_test
+42/76 Test: jet_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/jet_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"jet_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 10 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from Jet
+[ RUN      ] Jet.Jet
+[       OK ] Jet.Jet (1 ms)
+[ RUN      ] Jet.JetsInEigenMatrices
+[       OK ] Jet.JetsInEigenMatrices (0 ms)
+[----------] 2 tests from Jet (3 ms total)
+
+[----------] 8 tests from JetTraitsTest
+[ RUN      ] JetTraitsTest.ClassificationMixed
+[       OK ] JetTraitsTest.ClassificationMixed (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationNaN
+[       OK ] JetTraitsTest.ClassificationNaN (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationInf
+[       OK ] JetTraitsTest.ClassificationInf (0 ms)
+[ RUN      ] JetTraitsTest.ClassificationFinite
+[       OK ] JetTraitsTest.ClassificationFinite (0 ms)
+[ RUN      ] JetTraitsTest.MatrixScalarUnaryOps
+[       OK ] JetTraitsTest.MatrixScalarUnaryOps (0 ms)
+[ RUN      ] JetTraitsTest.MatrixScalarBinaryOps
+[       OK ] JetTraitsTest.MatrixScalarBinaryOps (0 ms)
+[ RUN      ] JetTraitsTest.ArrayScalarUnaryOps
+[       OK ] JetTraitsTest.ArrayScalarUnaryOps (0 ms)
+[ RUN      ] JetTraitsTest.ArrayScalarBinaryOps
+[       OK ] JetTraitsTest.ArrayScalarBinaryOps (0 ms)
+[----------] 8 tests from JetTraitsTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 2 test cases ran. (9 ms total)
+[  PASSED  ] 10 tests.
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"jet_test" end time: Oct 14 04:45 JST
+"jet_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/76 Testing: levenberg_marquardt_strategy_test
+43/76 Test: levenberg_marquardt_strategy_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/levenberg_marquardt_strategy_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"levenberg_marquardt_strategy_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from LevenbergMarquardtStrategy
+[ RUN      ] LevenbergMarquardtStrategy.AcceptRejectStepRadiusScaling
+[       OK ] LevenbergMarquardtStrategy.AcceptRejectStepRadiusScaling (8 ms)
+[ RUN      ] LevenbergMarquardtStrategy.CorrectDiagonalToLinearSolver
+[       OK ] LevenbergMarquardtStrategy.CorrectDiagonalToLinearSolver (10 ms)
+[----------] 2 tests from LevenbergMarquardtStrategy (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (20 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"levenberg_marquardt_strategy_test" end time: Oct 14 04:45 JST
+"levenberg_marquardt_strategy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/76 Testing: line_search_minimizer_test
+44/76 Test: line_search_minimizer_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/line_search_minimizer_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"line_search_minimizer_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from LineSearchMinimizerTest
+[ RUN      ] LineSearchMinimizerTest.FinalCostIsZero
+[       OK ] LineSearchMinimizerTest.FinalCostIsZero (12 ms)
+[----------] 1 test from LineSearchMinimizerTest (13 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (15 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"line_search_minimizer_test" end time: Oct 14 04:45 JST
+"line_search_minimizer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/76 Testing: line_search_preprocessor_test
+45/76 Test: line_search_preprocessor_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/line_search_preprocessor_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"line_search_preprocessor_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from LineSearchPreprocessor
+[ RUN      ] LineSearchPreprocessor.ZeroProblem
+[       OK ] LineSearchPreprocessor.ZeroProblem (6 ms)
+[ RUN      ] LineSearchPreprocessor.ProblemWithInvalidParameterBlock
+[       OK ] LineSearchPreprocessor.ProblemWithInvalidParameterBlock (0 ms)
+[ RUN      ] LineSearchPreprocessor.ParameterBlockHasBounds
+[       OK ] LineSearchPreprocessor.ParameterBlockHasBounds (0 ms)
+[ RUN      ] LineSearchPreprocessor.RemoveParameterBlocksFailed
+[       OK ] LineSearchPreprocessor.RemoveParameterBlocksFailed (0 ms)
+[ RUN      ] LineSearchPreprocessor.RemoveParameterBlocksSucceeds
+[       OK ] LineSearchPreprocessor.RemoveParameterBlocksSucceeds (0 ms)
+[ RUN      ] LineSearchPreprocessor.NormalOperation
+[       OK ] LineSearchPreprocessor.NormalOperation (13 ms)
+[----------] 6 tests from LineSearchPreprocessor (21 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (23 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"line_search_preprocessor_test" end time: Oct 14 04:45 JST
+"line_search_preprocessor_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/76 Testing: local_parameterization_test
+46/76 Test: local_parameterization_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/local_parameterization_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"local_parameterization_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 27 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from IdentityParameterization
+[ RUN      ] IdentityParameterization.EverythingTest
+[       OK ] IdentityParameterization.EverythingTest (0 ms)
+[----------] 1 test from IdentityParameterization (1 ms total)
+
+[----------] 6 tests from SubsetParameterization
+[ RUN      ] SubsetParameterization.NegativeParameterIndexDeathTest
+[       OK ] SubsetParameterization.NegativeParameterIndexDeathTest (35 ms)
+[ RUN      ] SubsetParameterization.GreaterThanSizeParameterIndexDeathTest
+[       OK ] SubsetParameterization.GreaterThanSizeParameterIndexDeathTest (27 ms)
+[ RUN      ] SubsetParameterization.DuplicateParametersDeathTest
+[       OK ] SubsetParameterization.DuplicateParametersDeathTest (38 ms)
+[ RUN      ] SubsetParameterization.ProductParameterizationWithZeroLocalSizeSubsetParameterization1
+[       OK ] SubsetParameterization.ProductParameterizationWithZeroLocalSizeSubsetParameterization1 (0 ms)
+[ RUN      ] SubsetParameterization.ProductParameterizationWithZeroLocalSizeSubsetParameterization2
+[       OK ] SubsetParameterization.ProductParameterizationWithZeroLocalSizeSubsetParameterization2 (0 ms)
+[ RUN      ] SubsetParameterization.NormalFunctionTest
+[       OK ] SubsetParameterization.NormalFunctionTest (0 ms)
+[----------] 6 tests from SubsetParameterization (102 ms total)
+
+[----------] 3 tests from QuaternionParameterization
+[ RUN      ] QuaternionParameterization.ZeroTest
+[       OK ] QuaternionParameterization.ZeroTest (1 ms)
+[ RUN      ] QuaternionParameterization.NearZeroTest
+[       OK ] QuaternionParameterization.NearZeroTest (0 ms)
+[ RUN      ] QuaternionParameterization.AwayFromZeroTest
+[       OK ] QuaternionParameterization.AwayFromZeroTest (0 ms)
+[----------] 3 tests from QuaternionParameterization (1 ms total)
+
+[----------] 3 tests from EigenQuaternionParameterization
+[ RUN      ] EigenQuaternionParameterization.ZeroTest
+[       OK ] EigenQuaternionParameterization.ZeroTest (1 ms)
+[ RUN      ] EigenQuaternionParameterization.NearZeroTest
+[       OK ] EigenQuaternionParameterization.NearZeroTest (0 ms)
+[ RUN      ] EigenQuaternionParameterization.AwayFromZeroTest
+[       OK ] EigenQuaternionParameterization.AwayFromZeroTest (0 ms)
+[----------] 3 tests from EigenQuaternionParameterization (1 ms total)
+
+[----------] 9 tests from HomogeneousVectorParameterization
+[ RUN      ] HomogeneousVectorParameterization.ZeroTest
+[       OK ] HomogeneousVectorParameterization.ZeroTest (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.NearZeroTest1
+[       OK ] HomogeneousVectorParameterization.NearZeroTest1 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.NearZeroTest2
+[       OK ] HomogeneousVectorParameterization.NearZeroTest2 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.AwayFromZeroTest1
+[       OK ] HomogeneousVectorParameterization.AwayFromZeroTest1 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.AwayFromZeroTest2
+[       OK ] HomogeneousVectorParameterization.AwayFromZeroTest2 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.AwayFromZeroTest3
+[       OK ] HomogeneousVectorParameterization.AwayFromZeroTest3 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.AwayFromZeroTest4
+[       OK ] HomogeneousVectorParameterization.AwayFromZeroTest4 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.AwayFromZeroTest5
+[       OK ] HomogeneousVectorParameterization.AwayFromZeroTest5 (0 ms)
+[ RUN      ] HomogeneousVectorParameterization.DeathTests
+[       OK ] HomogeneousVectorParameterization.DeathTests (29 ms)
+[----------] 9 tests from HomogeneousVectorParameterization (30 ms total)
+
+[----------] 5 tests from ProductParameterizationTest
+[ RUN      ] ProductParameterizationTest.LocalAndGlobalSize2
+[       OK ] ProductParameterizationTest.LocalAndGlobalSize2 (0 ms)
+[ RUN      ] ProductParameterizationTest.LocalAndGlobalSize3
+[       OK ] ProductParameterizationTest.LocalAndGlobalSize3 (0 ms)
+[ RUN      ] ProductParameterizationTest.LocalAndGlobalSize4
+[       OK ] ProductParameterizationTest.LocalAndGlobalSize4 (0 ms)
+[ RUN      ] ProductParameterizationTest.Plus
+[       OK ] ProductParameterizationTest.Plus (0 ms)
+[ RUN      ] ProductParameterizationTest.ComputeJacobian
+[       OK ] ProductParameterizationTest.ComputeJacobian (0 ms)
+[----------] 5 tests from ProductParameterizationTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 27 tests from 6 test cases ran. (139 ms total)
+[  PASSED  ] 27 tests.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"local_parameterization_test" end time: Oct 14 04:45 JST
+"local_parameterization_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/76 Testing: loss_function_test
+47/76 Test: loss_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/loss_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"loss_function_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 10 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 10 tests from LossFunction
+[ RUN      ] LossFunction.TrivialLoss
+[       OK ] LossFunction.TrivialLoss (0 ms)
+[ RUN      ] LossFunction.HuberLoss
+[       OK ] LossFunction.HuberLoss (0 ms)
+[ RUN      ] LossFunction.SoftLOneLoss
+[       OK ] LossFunction.SoftLOneLoss (0 ms)
+[ RUN      ] LossFunction.CauchyLoss
+[       OK ] LossFunction.CauchyLoss (0 ms)
+[ RUN      ] LossFunction.ArctanLoss
+[       OK ] LossFunction.ArctanLoss (0 ms)
+[ RUN      ] LossFunction.TolerantLoss
+[       OK ] LossFunction.TolerantLoss (0 ms)
+[ RUN      ] LossFunction.TukeyLoss
+[       OK ] LossFunction.TukeyLoss (0 ms)
+[ RUN      ] LossFunction.ComposedLoss
+[       OK ] LossFunction.ComposedLoss (0 ms)
+[ RUN      ] LossFunction.ScaledLoss
+[       OK ] LossFunction.ScaledLoss (0 ms)
+[ RUN      ] LossFunction.LossFunctionWrapper
+[       OK ] LossFunction.LossFunctionWrapper (0 ms)
+[----------] 10 tests from LossFunction (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test case ran. (6 ms total)
+[  PASSED  ] 10 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"loss_function_test" end time: Oct 14 04:45 JST
+"loss_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/76 Testing: minimizer_test
+48/76 Test: minimizer_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/minimizer_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"minimizer_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from Minimizer
+[ RUN      ] Minimizer.InitializationCopiesCallbacks
+[       OK ] Minimizer.InitializationCopiesCallbacks (0 ms)
+[ RUN      ] Minimizer.UserAbortUpdatesSummaryMessage
+[       OK ] Minimizer.UserAbortUpdatesSummaryMessage (0 ms)
+[ RUN      ] Minimizer.UserSuccessUpdatesSummaryMessage
+[       OK ] Minimizer.UserSuccessUpdatesSummaryMessage (0 ms)
+[----------] 3 tests from Minimizer (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"minimizer_test" end time: Oct 14 04:45 JST
+"minimizer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/76 Testing: normal_prior_test
+49/76 Test: normal_prior_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/normal_prior_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"normal_prior_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from NormalPriorTest
+[ RUN      ] NormalPriorTest.ResidualAtRandomPosition
+[       OK ] NormalPriorTest.ResidualAtRandomPosition (0 ms)
+[ RUN      ] NormalPriorTest.ResidualAtRandomPositionNullJacobians
+[       OK ] NormalPriorTest.ResidualAtRandomPositionNullJacobians (0 ms)
+[----------] 2 tests from NormalPriorTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"normal_prior_test" end time: Oct 14 04:45 JST
+"normal_prior_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/76 Testing: numeric_diff_cost_function_test
+50/76 Test: numeric_diff_cost_function_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/numeric_diff_cost_function_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"numeric_diff_cost_function_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 19 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 19 tests from NumericDiffCostFunction
+[ RUN      ] NumericDiffCostFunction.EasyCaseFunctorCentralDifferences
+[       OK ] NumericDiffCostFunction.EasyCaseFunctorCentralDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseFunctorForwardDifferences
+[       OK ] NumericDiffCostFunction.EasyCaseFunctorForwardDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseFunctorRidders
+[       OK ] NumericDiffCostFunction.EasyCaseFunctorRidders (1 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseCostFunctionCentralDifferences
+[       OK ] NumericDiffCostFunction.EasyCaseCostFunctionCentralDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseCostFunctionForwardDifferences
+[       OK ] NumericDiffCostFunction.EasyCaseCostFunctionForwardDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseCostFunctionRidders
+[       OK ] NumericDiffCostFunction.EasyCaseCostFunctionRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseFunctorCentralDifferences
+[       OK ] NumericDiffCostFunction.TranscendentalCaseFunctorCentralDifferences (1 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseFunctorForwardDifferences
+[       OK ] NumericDiffCostFunction.TranscendentalCaseFunctorForwardDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseFunctorRidders
+[       OK ] NumericDiffCostFunction.TranscendentalCaseFunctorRidders (1 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseCostFunctionCentralDifferences
+[       OK ] NumericDiffCostFunction.TranscendentalCaseCostFunctionCentralDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseCostFunctionForwardDifferences
+[       OK ] NumericDiffCostFunction.TranscendentalCaseCostFunctionForwardDifferences (0 ms)
+[ RUN      ] NumericDiffCostFunction.TranscendentalCaseCostFunctionRidders
+[       OK ] NumericDiffCostFunction.TranscendentalCaseCostFunctionRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.EigenRowMajorColMajorTest
+[       OK ] NumericDiffCostFunction.EigenRowMajorColMajorTest (0 ms)
+[ RUN      ] NumericDiffCostFunction.EasyCaseFunctorCentralDifferencesAndDynamicNumResiduals
+[       OK ] NumericDiffCostFunction.EasyCaseFunctorCentralDifferencesAndDynamicNumResiduals (0 ms)
+[ RUN      ] NumericDiffCostFunction.ExponentialFunctorRidders
+[       OK ] NumericDiffCostFunction.ExponentialFunctorRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.ExponentialCostFunctionRidders
+[       OK ] NumericDiffCostFunction.ExponentialCostFunctionRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.RandomizedFunctorRidders
+[       OK ] NumericDiffCostFunction.RandomizedFunctorRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.RandomizedCostFunctionRidders
+[       OK ] NumericDiffCostFunction.RandomizedCostFunctionRidders (0 ms)
+[ RUN      ] NumericDiffCostFunction.PartiallyFilledResidualShouldFailEvaluation
+[       OK ] NumericDiffCostFunction.PartiallyFilledResidualShouldFailEvaluation (0 ms)
+[----------] 19 tests from NumericDiffCostFunction (11 ms total)
+
+[----------] Global test environment tear-down
+[==========] 19 tests from 1 test case ran. (12 ms total)
+[  PASSED  ] 19 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"numeric_diff_cost_function_test" end time: Oct 14 04:45 JST
+"numeric_diff_cost_function_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/76 Testing: ordered_groups_test
+51/76 Test: ordered_groups_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/ordered_groups_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"ordered_groups_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from OrderedGroups
+[ RUN      ] OrderedGroups.EmptyOrderedGroupBehavesCorrectly
+[       OK ] OrderedGroups.EmptyOrderedGroupBehavesCorrectly (0 ms)
+[ RUN      ] OrderedGroups.EverythingInOneGroup
+[       OK ] OrderedGroups.EverythingInOneGroup (0 ms)
+[ RUN      ] OrderedGroups.StartInOneGroupAndThenSplit
+[       OK ] OrderedGroups.StartInOneGroupAndThenSplit (1 ms)
+[ RUN      ] OrderedGroups.AddAndRemoveEveryThingFromOneGroup
+[       OK ] OrderedGroups.AddAndRemoveEveryThingFromOneGroup (0 ms)
+[ RUN      ] OrderedGroups.ReverseOrdering
+[       OK ] OrderedGroups.ReverseOrdering (0 ms)
+[ RUN      ] OrderedGroups.ReverseOrderingWithEmptyOrderedGroups
+[       OK ] OrderedGroups.ReverseOrderingWithEmptyOrderedGroups (0 ms)
+[ RUN      ] OrderedGroups.BulkRemove
+[       OK ] OrderedGroups.BulkRemove (0 ms)
+[ RUN      ] OrderedGroups.BulkRemoveWithNoElements
+[       OK ] OrderedGroups.BulkRemoveWithNoElements (0 ms)
+[ RUN      ] OrderedGroups.MinNonZeroGroup
+[       OK ] OrderedGroups.MinNonZeroGroup (33 ms)
+[----------] 9 tests from OrderedGroups (38 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (39 ms total)
+[  PASSED  ] 9 tests.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"ordered_groups_test" end time: Oct 14 04:45 JST
+"ordered_groups_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/76 Testing: parameter_block_test
+52/76 Test: parameter_block_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/parameter_block_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"parameter_block_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 13 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 13 tests from ParameterBlock
+[ RUN      ] ParameterBlock.SetLocalParameterizationDiesOnSizeMismatch
+[       OK ] ParameterBlock.SetLocalParameterizationDiesOnSizeMismatch (33 ms)
+[ RUN      ] ParameterBlock.SetLocalParameterizationWithSameExistingParameterization
+[       OK ] ParameterBlock.SetLocalParameterizationWithSameExistingParameterization (0 ms)
+[ RUN      ] ParameterBlock.SetLocalParameterizationDiesWhenResettingToNull
+[       OK ] ParameterBlock.SetLocalParameterizationDiesWhenResettingToNull (27 ms)
+[ RUN      ] ParameterBlock.SetLocalParameterizationDiesWhenResettingToDifferentParameterization
+[       OK ] ParameterBlock.SetLocalParameterizationDiesWhenResettingToDifferentParameterization (27 ms)
+[ RUN      ] ParameterBlock.SetLocalParameterizationDiesOnNullParameterization
+[       OK ] ParameterBlock.SetLocalParameterizationDiesOnNullParameterization (27 ms)
+[ RUN      ] ParameterBlock.SetParameterizationDiesOnZeroLocalSize
+[       OK ] ParameterBlock.SetParameterizationDiesOnZeroLocalSize (27 ms)
+[ RUN      ] ParameterBlock.SetLocalParameterizationAndNormalOperation
+[       OK ] ParameterBlock.SetLocalParameterizationAndNormalOperation (0 ms)
+[ RUN      ] ParameterBlock.SetStateUpdatesLocalParameterizationJacobian
+[       OK ] ParameterBlock.SetStateUpdatesLocalParameterizationJacobian (0 ms)
+[ RUN      ] ParameterBlock.PlusWithNoLocalParameterization
+[       OK ] ParameterBlock.PlusWithNoLocalParameterization (0 ms)
+[ RUN      ] ParameterBlock.DetectBadLocalParameterization
+[       OK ] ParameterBlock.DetectBadLocalParameterization (5 ms)
+[ RUN      ] ParameterBlock.DefaultBounds
+[       OK ] ParameterBlock.DefaultBounds (0 ms)
+[ RUN      ] ParameterBlock.SetBounds
+[       OK ] ParameterBlock.SetBounds (0 ms)
+[ RUN      ] ParameterBlock.PlusWithBoundsConstraints
+[       OK ] ParameterBlock.PlusWithBoundsConstraints (0 ms)
+[----------] 13 tests from ParameterBlock (150 ms total)
+
+[----------] Global test environment tear-down
+[==========] 13 tests from 1 test case ran. (151 ms total)
+[  PASSED  ] 13 tests.
+<end of output>
+Test time =   0.24 sec
+----------------------------------------------------------
+Test Passed.
+"parameter_block_test" end time: Oct 14 04:45 JST
+"parameter_block_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/76 Testing: parameter_block_ordering_test
+53/76 Test: parameter_block_ordering_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/parameter_block_ordering_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"parameter_block_ordering_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from SchurOrderingTest
+[ RUN      ] SchurOrderingTest.NoFixed
+[       OK ] SchurOrderingTest.NoFixed (4 ms)
+[ RUN      ] SchurOrderingTest.AllFixed
+[       OK ] SchurOrderingTest.AllFixed (0 ms)
+[ RUN      ] SchurOrderingTest.OneFixed
+[       OK ] SchurOrderingTest.OneFixed (0 ms)
+[----------] 3 tests from SchurOrderingTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (8 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"parameter_block_ordering_test" end time: Oct 14 04:45 JST
+"parameter_block_ordering_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/76 Testing: partitioned_matrix_view_test
+54/76 Test: partitioned_matrix_view_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/partitioned_matrix_view_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"partitioned_matrix_view_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from PartitionedMatrixViewTest
+[ RUN      ] PartitionedMatrixViewTest.DimensionsTest
+[       OK ] PartitionedMatrixViewTest.DimensionsTest (1 ms)
+[ RUN      ] PartitionedMatrixViewTest.RightMultiplyE
+[       OK ] PartitionedMatrixViewTest.RightMultiplyE (1 ms)
+[ RUN      ] PartitionedMatrixViewTest.RightMultiplyF
+[       OK ] PartitionedMatrixViewTest.RightMultiplyF (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.LeftMultiply
+[       OK ] PartitionedMatrixViewTest.LeftMultiply (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.BlockDiagonalEtE
+[       OK ] PartitionedMatrixViewTest.BlockDiagonalEtE (0 ms)
+[ RUN      ] PartitionedMatrixViewTest.BlockDiagonalFtF
+[       OK ] PartitionedMatrixViewTest.BlockDiagonalFtF (0 ms)
+[----------] 6 tests from PartitionedMatrixViewTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (5 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"partitioned_matrix_view_test" end time: Oct 14 04:45 JST
+"partitioned_matrix_view_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/76 Testing: polynomial_test
+55/76 Test: polynomial_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/polynomial_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"polynomial_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 28 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 27 tests from Polynomial
+[ RUN      ] Polynomial.InvalidPolynomialOfZeroLengthIsRejected
+E1014 04:45:29.278651  3913 polynomial.cc:189] Invalid polynomial of size 0 passed to FindPolynomialRoots
+[       OK ] Polynomial.InvalidPolynomialOfZeroLengthIsRejected (4 ms)
+[ RUN      ] Polynomial.ConstantPolynomialReturnsNoRoots
+[       OK ] Polynomial.ConstantPolynomialReturnsNoRoots (0 ms)
+[ RUN      ] Polynomial.LinearPolynomialWithPositiveRootWorks
+[       OK ] Polynomial.LinearPolynomialWithPositiveRootWorks (0 ms)
+[ RUN      ] Polynomial.LinearPolynomialWithNegativeRootWorks
+[       OK ] Polynomial.LinearPolynomialWithNegativeRootWorks (0 ms)
+[ RUN      ] Polynomial.QuadraticPolynomialWithPositiveRootsWorks
+[       OK ] Polynomial.QuadraticPolynomialWithPositiveRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuadraticPolynomialWithOneNegativeRootWorks
+[       OK ] Polynomial.QuadraticPolynomialWithOneNegativeRootWorks (0 ms)
+[ RUN      ] Polynomial.QuadraticPolynomialWithTwoNegativeRootsWorks
+[       OK ] Polynomial.QuadraticPolynomialWithTwoNegativeRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuadraticPolynomialWithCloseRootsWorks
+[       OK ] Polynomial.QuadraticPolynomialWithCloseRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuadraticPolynomialWithComplexRootsWorks
+[       OK ] Polynomial.QuadraticPolynomialWithComplexRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuarticPolynomialWorks
+[       OK ] Polynomial.QuarticPolynomialWorks (1 ms)
+[ RUN      ] Polynomial.QuarticPolynomialWithTwoClustersOfCloseRootsWorks
+[       OK ] Polynomial.QuarticPolynomialWithTwoClustersOfCloseRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuarticPolynomialWithTwoZeroRootsWorks
+[       OK ] Polynomial.QuarticPolynomialWithTwoZeroRootsWorks (0 ms)
+[ RUN      ] Polynomial.QuarticMonomialWorks
+[       OK ] Polynomial.QuarticMonomialWorks (0 ms)
+[ RUN      ] Polynomial.NullPointerAsImaginaryPartWorks
+[       OK ] Polynomial.NullPointerAsImaginaryPartWorks (0 ms)
+[ RUN      ] Polynomial.NullPointerAsRealPartWorks
+[       OK ] Polynomial.NullPointerAsRealPartWorks (0 ms)
+[ RUN      ] Polynomial.BothOutputArgumentsNullWorks
+[       OK ] Polynomial.BothOutputArgumentsNullWorks (0 ms)
+[ RUN      ] Polynomial.DifferentiateConstantPolynomial
+[       OK ] Polynomial.DifferentiateConstantPolynomial (0 ms)
+[ RUN      ] Polynomial.DifferentiateQuadraticPolynomial
+[       OK ] Polynomial.DifferentiateQuadraticPolynomial (0 ms)
+[ RUN      ] Polynomial.MinimizeConstantPolynomial
+[       OK ] Polynomial.MinimizeConstantPolynomial (0 ms)
+[ RUN      ] Polynomial.MinimizeLinearPolynomial
+[       OK ] Polynomial.MinimizeLinearPolynomial (0 ms)
+[ RUN      ] Polynomial.MinimizeQuadraticPolynomial
+[       OK ] Polynomial.MinimizeQuadraticPolynomial (0 ms)
+[ RUN      ] Polynomial.LinearInterpolatingPolynomial
+[       OK ] Polynomial.LinearInterpolatingPolynomial (0 ms)
+[ RUN      ] Polynomial.QuadraticInterpolatingPolynomial
+[       OK ] Polynomial.QuadraticInterpolatingPolynomial (0 ms)
+[ RUN      ] Polynomial.DeficientCubicInterpolatingPolynomial
+[       OK ] Polynomial.DeficientCubicInterpolatingPolynomial (1 ms)
+[ RUN      ] Polynomial.CubicInterpolatingPolynomialFromValues
+[       OK ] Polynomial.CubicInterpolatingPolynomialFromValues (0 ms)
+[ RUN      ] Polynomial.CubicInterpolatingPolynomialFromValuesAndOneGradient
+[       OK ] Polynomial.CubicInterpolatingPolynomialFromValuesAndOneGradient (0 ms)
+[ RUN      ] Polynomial.CubicInterpolatingPolynomialFromValuesAndGradients
+[       OK ] Polynomial.CubicInterpolatingPolynomialFromValuesAndGradients (0 ms)
+[----------] 27 tests from Polynomial (17 ms total)
+
+[----------] 1 test from Polymomial
+[ RUN      ] Polymomial.ConstantInterpolatingPolynomial
+[       OK ] Polymomial.ConstantInterpolatingPolynomial (0 ms)
+[----------] 1 test from Polymomial (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 28 tests from 2 test cases ran. (20 ms total)
+[  PASSED  ] 28 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"polynomial_test" end time: Oct 14 04:45 JST
+"polynomial_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/76 Testing: problem_test
+56/76 Test: problem_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/problem_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"problem_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 41 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 22 tests from Problem
+[ RUN      ] Problem.AddResidualWithNullCostFunctionDies
+[       OK ] Problem.AddResidualWithNullCostFunctionDies (47 ms)
+[ RUN      ] Problem.AddResidualWithIncorrectNumberOfParameterBlocksDies
+[       OK ] Problem.AddResidualWithIncorrectNumberOfParameterBlocksDies (29 ms)
+[ RUN      ] Problem.AddResidualWithDifferentSizesOnTheSameVariableDies
+[       OK ] Problem.AddResidualWithDifferentSizesOnTheSameVariableDies (34 ms)
+[ RUN      ] Problem.AddResidualWithDuplicateParametersDies
+[       OK ] Problem.AddResidualWithDuplicateParametersDies (58 ms)
+[ RUN      ] Problem.AddResidualWithIncorrectSizesOfParameterBlockDies
+[       OK ] Problem.AddResidualWithIncorrectSizesOfParameterBlockDies (30 ms)
+[ RUN      ] Problem.AddResidualAddsDuplicatedParametersOnlyOnce
+[       OK ] Problem.AddResidualAddsDuplicatedParametersOnlyOnce (1 ms)
+[ RUN      ] Problem.AddParameterWithDifferentSizesOnTheSameVariableDies
+[       OK ] Problem.AddParameterWithDifferentSizesOnTheSameVariableDies (27 ms)
+[ RUN      ] Problem.AddParameterWithAliasedParametersDies
+[       OK ] Problem.AddParameterWithAliasedParametersDies (177 ms)
+[ RUN      ] Problem.AddParameterIgnoresDuplicateCalls
+[       OK ] Problem.AddParameterIgnoresDuplicateCalls (1 ms)
+[ RUN      ] Problem.AddingParametersAndResidualsResultsInExpectedProblem
+[       OK ] Problem.AddingParametersAndResidualsResultsInExpectedProblem (0 ms)
+[ RUN      ] Problem.ReusedCostFunctionsAreOnlyDeletedOnce
+[       OK ] Problem.ReusedCostFunctionsAreOnlyDeletedOnce (0 ms)
+[ RUN      ] Problem.GetCostFunctionForResidualBlock
+[       OK ] Problem.GetCostFunctionForResidualBlock (0 ms)
+[ RUN      ] Problem.GetLossFunctionForResidualBlock
+[       OK ] Problem.GetLossFunctionForResidualBlock (0 ms)
+[ RUN      ] Problem.CostFunctionsAreDeletedEvenWithRemovals
+[       OK ] Problem.CostFunctionsAreDeletedEvenWithRemovals (1 ms)
+[ RUN      ] Problem.SetParameterBlockConstantWithUnknownPtrDies
+[       OK ] Problem.SetParameterBlockConstantWithUnknownPtrDies (28 ms)
+[ RUN      ] Problem.SetParameterBlockVariableWithUnknownPtrDies
+[       OK ] Problem.SetParameterBlockVariableWithUnknownPtrDies (28 ms)
+[ RUN      ] Problem.IsParameterBlockConstant
+[       OK ] Problem.IsParameterBlockConstant (0 ms)
+[ RUN      ] Problem.IsParameterBlockConstantWithUnknownPtrDies
+[       OK ] Problem.IsParameterBlockConstantWithUnknownPtrDies (28 ms)
+[ RUN      ] Problem.SetLocalParameterizationWithUnknownPtrDies
+[       OK ] Problem.SetLocalParameterizationWithUnknownPtrDies (28 ms)
+[ RUN      ] Problem.RemoveParameterBlockWithUnknownPtrDies
+[       OK ] Problem.RemoveParameterBlockWithUnknownPtrDies (27 ms)
+[ RUN      ] Problem.GetParameterization
+[       OK ] Problem.GetParameterization (0 ms)
+[ RUN      ] Problem.ParameterBlockQueryTest
+[       OK ] Problem.ParameterBlockQueryTest (0 ms)
+[----------] 22 tests from Problem (551 ms total)
+
+[----------] 9 tests from ProblemEvaluateTest
+[ RUN      ] ProblemEvaluateTest.MultipleParameterAndResidualBlocks
+[       OK ] ProblemEvaluateTest.MultipleParameterAndResidualBlocks (1 ms)
+[ RUN      ] ProblemEvaluateTest.ParameterAndResidualBlocksPassedInOptions
+[       OK ] ProblemEvaluateTest.ParameterAndResidualBlocksPassedInOptions (0 ms)
+[ RUN      ] ProblemEvaluateTest.ReorderedResidualBlocks
+[       OK ] ProblemEvaluateTest.ReorderedResidualBlocks (1 ms)
+[ RUN      ] ProblemEvaluateTest.ReorderedResidualBlocksAndReorderedParameterBlocks
+[       OK ] ProblemEvaluateTest.ReorderedResidualBlocksAndReorderedParameterBlocks (1 ms)
+[ RUN      ] ProblemEvaluateTest.ConstantParameterBlock
+[       OK ] ProblemEvaluateTest.ConstantParameterBlock (1 ms)
+[ RUN      ] ProblemEvaluateTest.ExcludedAResidualBlock
+[       OK ] ProblemEvaluateTest.ExcludedAResidualBlock (1 ms)
+[ RUN      ] ProblemEvaluateTest.ExcludedParameterBlock
+[       OK ] ProblemEvaluateTest.ExcludedParameterBlock (1 ms)
+[ RUN      ] ProblemEvaluateTest.ExcludedParameterBlockAndExcludedResidualBlock
+[       OK ] ProblemEvaluateTest.ExcludedParameterBlockAndExcludedResidualBlock (1 ms)
+[ RUN      ] ProblemEvaluateTest.LocalParameterization
+[       OK ] ProblemEvaluateTest.LocalParameterization (0 ms)
+[----------] 9 tests from ProblemEvaluateTest (11 ms total)
+
+[----------] 10 tests from OptionsInstantiation/DynamicProblem
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithNoResiduals/0
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithNoResiduals/0 (0 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithNoResiduals/1
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithNoResiduals/1 (0 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithResiduals/0
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithResiduals/0 (0 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithResiduals/1
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveParameterBlockWithResiduals/1 (0 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveResidualBlock/0
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveResidualBlock/0 (1 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveResidualBlock/1
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveResidualBlock/1 (0 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveInvalidResidualBlockDies/0
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveInvalidResidualBlockDies/0 (139 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.RemoveInvalidResidualBlockDies/1
+[       OK ] OptionsInstantiation/DynamicProblem.RemoveInvalidResidualBlockDies/1 (136 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.GetXXXBlocksForYYYBlock/0
+[       OK ] OptionsInstantiation/DynamicProblem.GetXXXBlocksForYYYBlock/0 (1 ms)
+[ RUN      ] OptionsInstantiation/DynamicProblem.GetXXXBlocksForYYYBlock/1
+[       OK ] OptionsInstantiation/DynamicProblem.GetXXXBlocksForYYYBlock/1 (0 ms)
+[----------] 10 tests from OptionsInstantiation/DynamicProblem (281 ms total)
+
+[----------] Global test environment tear-down
+[==========] 41 tests from 3 test cases ran. (845 ms total)
+[  PASSED  ] 41 tests.
+<end of output>
+Test time =   0.96 sec
+----------------------------------------------------------
+Test Passed.
+"problem_test" end time: Oct 14 04:45 JST
+"problem_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/76 Testing: program_test
+57/76 Test: program_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/program_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"program_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from Program
+[ RUN      ] Program.RemoveFixedBlocksNothingConstant
+[       OK ] Program.RemoveFixedBlocksNothingConstant (5 ms)
+[ RUN      ] Program.RemoveFixedBlocksAllParameterBlocksConstant
+[       OK ] Program.RemoveFixedBlocksAllParameterBlocksConstant (0 ms)
+[ RUN      ] Program.RemoveFixedBlocksNoResidualBlocks
+[       OK ] Program.RemoveFixedBlocksNoResidualBlocks (0 ms)
+[ RUN      ] Program.RemoveFixedBlocksOneParameterBlockConstant
+[       OK ] Program.RemoveFixedBlocksOneParameterBlockConstant (0 ms)
+[ RUN      ] Program.RemoveFixedBlocksNumEliminateBlocks
+[       OK ] Program.RemoveFixedBlocksNumEliminateBlocks (0 ms)
+[ RUN      ] Program.RemoveFixedBlocksFixedCost
+[       OK ] Program.RemoveFixedBlocksFixedCost (0 ms)
+[ RUN      ] Program.CreateJacobianBlockSparsityTranspose
+[       OK ] Program.CreateJacobianBlockSparsityTranspose (0 ms)
+[ RUN      ] Program.ReallocationInCreateJacobianBlockSparsityTranspose
+[       OK ] Program.ReallocationInCreateJacobianBlockSparsityTranspose (0 ms)
+[ RUN      ] Program.ProblemHasNanParameterBlocks
+[       OK ] Program.ProblemHasNanParameterBlocks (1 ms)
+[ RUN      ] Program.InfeasibleParameterBlock
+[       OK ] Program.InfeasibleParameterBlock (0 ms)
+[ RUN      ] Program.InfeasibleConstantParameterBlock
+[       OK ] Program.InfeasibleConstantParameterBlock (0 ms)
+[----------] 11 tests from Program (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (13 ms total)
+[  PASSED  ] 11 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"program_test" end time: Oct 14 04:45 JST
+"program_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/76 Testing: reorder_program_test
+58/76 Test: reorder_program_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/reorder_program_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"reorder_program_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 7 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 3 tests from _
+[ RUN      ] _.ReorderResidualBlockNormalFunction
+[       OK ] _.ReorderResidualBlockNormalFunction (8 ms)
+[ RUN      ] _.ApplyOrderingOrderingTooSmall
+[       OK ] _.ApplyOrderingOrderingTooSmall (1 ms)
+[ RUN      ] _.ApplyOrderingNormal
+[       OK ] _.ApplyOrderingNormal (0 ms)
+[----------] 3 tests from _ (9 ms total)
+
+[----------] 4 tests from ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest
+[ RUN      ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.EverythingInGroupZero
+[       OK ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.EverythingInGroupZero (1 ms)
+[ RUN      ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.ContiguousGroups
+[       OK ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.ContiguousGroups (1 ms)
+[ RUN      ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.GroupsWithGaps
+[       OK ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.GroupsWithGaps (1 ms)
+[ RUN      ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.NonContiguousStartingAtTwo
+[       OK ] ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest.NonContiguousStartingAtTwo (1 ms)
+[----------] 4 tests from ReorderProgramForSparseNormalCholeskyUsingSuiteSparseTest (5 ms total)
+
+[----------] Global test environment tear-down
+[==========] 7 tests from 2 test cases ran. (16 ms total)
+[  PASSED  ] 7 tests.
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"reorder_program_test" end time: Oct 14 04:45 JST
+"reorder_program_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/76 Testing: residual_block_test
+59/76 Test: residual_block_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/residual_block_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"residual_block_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from ResidualBlock
+[ RUN      ] ResidualBlock.EvaluteWithNoLossFunctionOrLocalParameterizations
+[       OK ] ResidualBlock.EvaluteWithNoLossFunctionOrLocalParameterizations (0 ms)
+[ RUN      ] ResidualBlock.EvaluteWithLocalParameterizations
+[       OK ] ResidualBlock.EvaluteWithLocalParameterizations (0 ms)
+[----------] 2 tests from ResidualBlock (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"residual_block_test" end time: Oct 14 04:45 JST
+"residual_block_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/76 Testing: residual_block_utils_test
+60/76 Test: residual_block_utils_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/residual_block_utils_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"residual_block_utils_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 1 test from 1 test case.
+[----------] Global test environment set-up.
+[----------] 1 test from ResidualBlockUtils
+[ RUN      ] ResidualBlockUtils.CheckAllCombinationsOfBadness
+[       OK ] ResidualBlockUtils.CheckAllCombinationsOfBadness (5 ms)
+[----------] 1 test from ResidualBlockUtils (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test case ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"residual_block_utils_test" end time: Oct 14 04:45 JST
+"residual_block_utils_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/76 Testing: rotation_test
+61/76 Test: rotation_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/rotation_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"rotation_test" start time: Oct 14 04:45 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 40 tests from 6 test cases.
+[----------] Global test environment set-up.
+[----------] 27 tests from Rotation
+[ RUN      ] Rotation.ZeroAngleAxisToQuaternion
+[       OK ] Rotation.ZeroAngleAxisToQuaternion (1 ms)
+[ RUN      ] Rotation.SmallAngleAxisToQuaternion
+[       OK ] Rotation.SmallAngleAxisToQuaternion (1 ms)
+[ RUN      ] Rotation.TinyAngleAxisToQuaternion
+[       OK ] Rotation.TinyAngleAxisToQuaternion (0 ms)
+[ RUN      ] Rotation.XRotationToQuaternion
+[       OK ] Rotation.XRotationToQuaternion (0 ms)
+[ RUN      ] Rotation.UnitQuaternionToAngleAxis
+[       OK ] Rotation.UnitQuaternionToAngleAxis (1 ms)
+[ RUN      ] Rotation.YRotationQuaternionToAngleAxis
+[       OK ] Rotation.YRotationQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.ZRotationQuaternionToAngleAxis
+[       OK ] Rotation.ZRotationQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.SmallQuaternionToAngleAxis
+[       OK ] Rotation.SmallQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.TinyQuaternionToAngleAxis
+[       OK ] Rotation.TinyQuaternionToAngleAxis (0 ms)
+[ RUN      ] Rotation.QuaternionToAngleAxisAngleIsLessThanPi
+[       OK ] Rotation.QuaternionToAngleAxisAngleIsLessThanPi (0 ms)
+[ RUN      ] Rotation.AngleAxisToQuaterionAndBack
+[       OK ] Rotation.AngleAxisToQuaterionAndBack (2049 ms)
+[ RUN      ] Rotation.QuaterionToAngleAxisAndBack
+[       OK ] Rotation.QuaterionToAngleAxisAndBack (2142 ms)
+[ RUN      ] Rotation.ZeroAngleAxisToRotationMatrix
+[       OK ] Rotation.ZeroAngleAxisToRotationMatrix (1 ms)
+[ RUN      ] Rotation.NearZeroAngleAxisToRotationMatrix
+[       OK ] Rotation.NearZeroAngleAxisToRotationMatrix (1 ms)
+[ RUN      ] Rotation.XRotationToRotationMatrix
+[       OK ] Rotation.XRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.YRotationToRotationMatrix
+[       OK ] Rotation.YRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.NearPiAngleAxisRoundTrip
+[       OK ] Rotation.NearPiAngleAxisRoundTrip (1022 ms)
+[ RUN      ] Rotation.AtPiAngleAxisRoundTrip
+[       OK ] Rotation.AtPiAngleAxisRoundTrip (3 ms)
+[ RUN      ] Rotation.ZRotationToRotationMatrix
+[       OK ] Rotation.ZRotationToRotationMatrix (0 ms)
+[ RUN      ] Rotation.AngleAxisToRotationMatrixAndBack
+[       OK ] Rotation.AngleAxisToRotationMatrixAndBack (1597 ms)
+[ RUN      ] Rotation.AngleAxisToRotationMatrixAndBackNearZero
+[       OK ] Rotation.AngleAxisToRotationMatrixAndBackNearZero (1628 ms)
+[ RUN      ] Rotation.SmallAngleAxisToQuaternionForJets
+[       OK ] Rotation.SmallAngleAxisToQuaternionForJets (1 ms)
+[ RUN      ] Rotation.TinyAngleAxisToQuaternionForJets
+[       OK ] Rotation.TinyAngleAxisToQuaternionForJets (2 ms)
+[ RUN      ] Rotation.ZeroAngleAxisToQuaternionForJets
+[       OK ] Rotation.ZeroAngleAxisToQuaternionForJets (0 ms)
+[ RUN      ] Rotation.SmallQuaternionToAngleAxisForJets
+[       OK ] Rotation.SmallQuaternionToAngleAxisForJets (0 ms)
+[ RUN      ] Rotation.TinyQuaternionToAngleAxisForJets
+[       OK ] Rotation.TinyQuaternionToAngleAxisForJets (2 ms)
+[ RUN      ] Rotation.ZeroQuaternionToAngleAxisForJets
+[       OK ] Rotation.ZeroQuaternionToAngleAxisForJets (0 ms)
+[----------] 27 tests from Rotation (8461 ms total)
+
+[----------] 2 tests from EulerAnglesToRotationMatrix
+[ RUN      ] EulerAnglesToRotationMatrix.OnAxis
+[       OK ] EulerAnglesToRotationMatrix.OnAxis (4 ms)
+[ RUN      ] EulerAnglesToRotationMatrix.IsOrthonormal
+[       OK ] EulerAnglesToRotationMatrix.IsOrthonormal (1571 ms)
+[----------] 2 tests from EulerAnglesToRotationMatrix (1575 ms total)
+
+[----------] 3 tests from Quaternion
+[ RUN      ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrixCanned
+[       OK ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrixCanned (0 ms)
+[ RUN      ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrix
+[       OK ] Quaternion.RotatePointGivesSameAnswerAsRotationByMatrix (0 ms)
+[ RUN      ] Quaternion.MultiplicationIsAssociative
+[       OK ] Quaternion.MultiplicationIsAssociative (0 ms)
+[----------] 3 tests from Quaternion (1 ms total)
+
+[----------] 2 tests from AngleAxis
+[ RUN      ] AngleAxis.RotatePointGivesSameAnswerAsRotationMatrix
+[       OK ] AngleAxis.RotatePointGivesSameAnswerAsRotationMatrix (1507 ms)
+[ RUN      ] AngleAxis.NearZeroRotatePointGivesSameAnswerAsRotationMatrix
+[       OK ] AngleAxis.NearZeroRotatePointGivesSameAnswerAsRotationMatrix (15 ms)
+[----------] 2 tests from AngleAxis (1524 ms total)
+
+[----------] 4 tests from MatrixAdapter
+[ RUN      ] MatrixAdapter.RowMajor3x3ReturnTypeAndAccessIsCorrect
+[       OK ] MatrixAdapter.RowMajor3x3ReturnTypeAndAccessIsCorrect (0 ms)
+[ RUN      ] MatrixAdapter.ColumnMajor3x3ReturnTypeAndAccessIsCorrect
+[       OK ] MatrixAdapter.ColumnMajor3x3ReturnTypeAndAccessIsCorrect (0 ms)
+[ RUN      ] MatrixAdapter.RowMajor2x4IsCorrect
+[       OK ] MatrixAdapter.RowMajor2x4IsCorrect (0 ms)
+[ RUN      ] MatrixAdapter.ColumnMajor2x4IsCorrect
+[       OK ] MatrixAdapter.ColumnMajor2x4IsCorrect (0 ms)
+[----------] 4 tests from MatrixAdapter (1 ms total)
+
+[----------] 2 tests from RotationMatrixToAngleAxis
+[ RUN      ] RotationMatrixToAngleAxis.NearPiExampleOneFromTobiasStrauss
+[       OK ] RotationMatrixToAngleAxis.NearPiExampleOneFromTobiasStrauss (0 ms)
+[ RUN      ] RotationMatrixToAngleAxis.ExhaustiveRoundTrip
+[       OK ] RotationMatrixToAngleAxis.ExhaustiveRoundTrip (314373 ms)
+[----------] 2 tests from RotationMatrixToAngleAxis (314374 ms total)
+
+[----------] Global test environment tear-down
+[==========] 40 tests from 6 test cases ran. (325941 ms total)
+[  PASSED  ] 40 tests.
+<end of output>
+Test time = 326.04 sec
+----------------------------------------------------------
+Test Passed.
+"rotation_test" end time: Oct 14 04:50 JST
+"rotation_test" time elapsed: 00:05:26
+----------------------------------------------------------
+
+62/76 Testing: schur_complement_solver_test
+62/76 Test: schur_complement_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/schur_complement_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"schur_complement_solver_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 11 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 11 tests from SchurComplementSolverTest
+[ RUN      ] SchurComplementSolverTest.DenseSchurWithEigenSmallProblem
+[       OK ] SchurComplementSolverTest.DenseSchurWithEigenSmallProblem (29 ms)
+[ RUN      ] SchurComplementSolverTest.DenseSchurWithEigenLargeProblem
+[       OK ] SchurComplementSolverTest.DenseSchurWithEigenLargeProblem (0 ms)
+[ RUN      ] SchurComplementSolverTest.DenseSchurWithEigenVaryingFBlockSize
+[       OK ] SchurComplementSolverTest.DenseSchurWithEigenVaryingFBlockSize (1 ms)
+[ RUN      ] SchurComplementSolverTest.DenseSchurWithLAPACKSmallProblem
+[       OK ] SchurComplementSolverTest.DenseSchurWithLAPACKSmallProblem (2 ms)
+[ RUN      ] SchurComplementSolverTest.DenseSchurWithLAPACKLargeProblem
+[       OK ] SchurComplementSolverTest.DenseSchurWithLAPACKLargeProblem (1 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithSuiteSparseSmallProblemNoPostOrdering
+[       OK ] SchurComplementSolverTest.SparseSchurWithSuiteSparseSmallProblemNoPostOrdering (2 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithSuiteSparseSmallProblemPostOrdering
+[       OK ] SchurComplementSolverTest.SparseSchurWithSuiteSparseSmallProblemPostOrdering (2 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithSuiteSparseLargeProblemNoPostOrdering
+[       OK ] SchurComplementSolverTest.SparseSchurWithSuiteSparseLargeProblemNoPostOrdering (1 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithSuiteSparseLargeProblemPostOrdering
+[       OK ] SchurComplementSolverTest.SparseSchurWithSuiteSparseLargeProblemPostOrdering (1 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithCXSparseSmallProblem
+[       OK ] SchurComplementSolverTest.SparseSchurWithCXSparseSmallProblem (2 ms)
+[ RUN      ] SchurComplementSolverTest.SparseSchurWithCXSparseLargeProblem
+[       OK ] SchurComplementSolverTest.SparseSchurWithCXSparseLargeProblem (1 ms)
+[----------] 11 tests from SchurComplementSolverTest (45 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 1 test case ran. (48 ms total)
+[  PASSED  ] 11 tests.
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"schur_complement_solver_test" end time: Oct 14 04:50 JST
+"schur_complement_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/76 Testing: schur_eliminator_test
+63/76 Test: schur_eliminator_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/schur_eliminator_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"schur_eliminator_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from SchurEliminatorTest
+[ RUN      ] SchurEliminatorTest.ScalarProblemNoRegularization
+[       OK ] SchurEliminatorTest.ScalarProblemNoRegularization (15 ms)
+[ RUN      ] SchurEliminatorTest.ScalarProblemWithRegularization
+[       OK ] SchurEliminatorTest.ScalarProblemWithRegularization (0 ms)
+[ RUN      ] SchurEliminatorTest.VaryingFBlockSizeWithStaticStructure
+[       OK ] SchurEliminatorTest.VaryingFBlockSizeWithStaticStructure (0 ms)
+[ RUN      ] SchurEliminatorTest.VaryingFBlockSizeWithoutStaticStructure
+[       OK ] SchurEliminatorTest.VaryingFBlockSizeWithoutStaticStructure (0 ms)
+[----------] 4 tests from SchurEliminatorTest (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (20 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"schur_eliminator_test" end time: Oct 14 04:50 JST
+"schur_eliminator_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/76 Testing: single_linkage_clustering_test
+64/76 Test: single_linkage_clustering_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/single_linkage_clustering_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"single_linkage_clustering_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from SingleLinkageClustering
+[ RUN      ] SingleLinkageClustering.GraphHasTwoComponents
+[       OK ] SingleLinkageClustering.GraphHasTwoComponents (0 ms)
+[ RUN      ] SingleLinkageClustering.ComponentWithWeakLink
+[       OK ] SingleLinkageClustering.ComponentWithWeakLink (0 ms)
+[ RUN      ] SingleLinkageClustering.ComponentWithWeakLinkAndStrongLink
+[       OK ] SingleLinkageClustering.ComponentWithWeakLinkAndStrongLink (1 ms)
+[----------] 3 tests from SingleLinkageClustering (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 3 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"single_linkage_clustering_test" end time: Oct 14 04:50 JST
+"single_linkage_clustering_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/76 Testing: small_blas_test
+65/76 Test: small_blas_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/small_blas_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"small_blas_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from BLAS
+[ RUN      ] BLAS.MatrixMatrixMultiply
+[       OK ] BLAS.MatrixMatrixMultiply (26 ms)
+[ RUN      ] BLAS.MatrixTransposeMatrixMultiply
+[       OK ] BLAS.MatrixTransposeMatrixMultiply (26 ms)
+[ RUN      ] BLAS.MatrixVectorMultiply
+[       OK ] BLAS.MatrixVectorMultiply (0 ms)
+[ RUN      ] BLAS.MatrixTransposeVectorMultiply
+[       OK ] BLAS.MatrixTransposeVectorMultiply (0 ms)
+[----------] 4 tests from BLAS (54 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (55 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"small_blas_test" end time: Oct 14 04:50 JST
+"small_blas_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/76 Testing: solver_test
+66/76 Test: solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"solver_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 18 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 2 tests from SolverOptions
+[ RUN      ] SolverOptions.DefaultTrustRegionOptionsAreValid
+[       OK ] SolverOptions.DefaultTrustRegionOptionsAreValid (5 ms)
+[ RUN      ] SolverOptions.DefaultLineSearchOptionsAreValid
+[       OK ] SolverOptions.DefaultLineSearchOptionsAreValid (0 ms)
+[----------] 2 tests from SolverOptions (6 ms total)
+
+[----------] 16 tests from Solver
+[ RUN      ] Solver.UpdateStateEveryIterationOption
+[       OK ] Solver.UpdateStateEveryIterationOption (24 ms)
+[ RUN      ] Solver.TrustRegionProblemHasNoParameterBlocks
+[       OK ] Solver.TrustRegionProblemHasNoParameterBlocks (0 ms)
+[ RUN      ] Solver.LineSearchProblemHasNoParameterBlocks
+[       OK ] Solver.LineSearchProblemHasNoParameterBlocks (0 ms)
+[ RUN      ] Solver.TrustRegionProblemHasZeroResiduals
+[       OK ] Solver.TrustRegionProblemHasZeroResiduals (0 ms)
+[ RUN      ] Solver.LineSearchProblemHasZeroResiduals
+[       OK ] Solver.LineSearchProblemHasZeroResiduals (0 ms)
+[ RUN      ] Solver.TrustRegionProblemIsConstant
+[       OK ] Solver.TrustRegionProblemIsConstant (0 ms)
+[ RUN      ] Solver.LineSearchProblemIsConstant
+[       OK ] Solver.LineSearchProblemIsConstant (0 ms)
+[ RUN      ] Solver.SparseNormalCholeskyNoEigenSparse
+[       OK ] Solver.SparseNormalCholeskyNoEigenSparse (0 ms)
+[ RUN      ] Solver.SparseSchurNoEigenSparse
+[       OK ] Solver.SparseSchurNoEigenSparse (0 ms)
+[ RUN      ] Solver.SparseNormalCholeskyNoSparseLibrary
+[       OK ] Solver.SparseNormalCholeskyNoSparseLibrary (0 ms)
+[ RUN      ] Solver.SparseSchurNoSparseLibrary
+[       OK ] Solver.SparseSchurNoSparseLibrary (0 ms)
+[ RUN      ] Solver.IterativeSchurWithClusterJacobiPerconditionerNoSparseLibrary
+[       OK ] Solver.IterativeSchurWithClusterJacobiPerconditionerNoSparseLibrary (1 ms)
+[ RUN      ] Solver.IterativeSchurWithClusterTridiagonalPerconditionerNoSparseLibrary
+[       OK ] Solver.IterativeSchurWithClusterTridiagonalPerconditionerNoSparseLibrary (0 ms)
+[ RUN      ] Solver.IterativeLinearSolverForDogleg
+[       OK ] Solver.IterativeLinearSolverForDogleg (0 ms)
+[ RUN      ] Solver.LinearSolverTypeNormalOperation
+[       OK ] Solver.LinearSolverTypeNormalOperation (0 ms)
+[ RUN      ] Solver.FixedCostForConstantProblem
+[       OK ] Solver.FixedCostForConstantProblem (0 ms)
+[----------] 16 tests from Solver (31 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 2 test cases ran. (40 ms total)
+[  PASSED  ] 18 tests.
+<end of output>
+Test time =   0.16 sec
+----------------------------------------------------------
+Test Passed.
+"solver_test" end time: Oct 14 04:50 JST
+"solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/76 Testing: sparse_cholesky_test
+67/76 Test: sparse_cholesky_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/sparse_cholesky_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"sparse_cholesky_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 8 tests from 2 test cases.
+[----------] Global test environment set-up.
+[----------] 4 tests from SuiteSparseCholesky/SparseCholeskyTest
+[ RUN      ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_AMD_UseBlockStructure
+[       OK ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_AMD_UseBlockStructure (97 ms)
+[ RUN      ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_AMD_NoBlockStructure
+[       OK ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_AMD_NoBlockStructure (94 ms)
+[ RUN      ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_NATURAL_UseBlockStructure
+[       OK ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_NATURAL_UseBlockStructure (85 ms)
+[ RUN      ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_NATURAL_NoBlockStructure
+[       OK ] SuiteSparseCholesky/SparseCholeskyTest.FactorAndSolve/SUITE_SPARSE_NATURAL_NoBlockStructure (85 ms)
+[----------] 4 tests from SuiteSparseCholesky/SparseCholeskyTest (363 ms total)
+
+[----------] 4 tests from CXSparseCholesky/SparseCholeskyTest
+[ RUN      ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_AMD_UseBlockStructure
+[       OK ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_AMD_UseBlockStructure (81 ms)
+[ RUN      ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_AMD_NoBlockStructure
+[       OK ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_AMD_NoBlockStructure (79 ms)
+[ RUN      ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_NATURAL_UseBlockStructure
+[       OK ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_NATURAL_UseBlockStructure (72 ms)
+[ RUN      ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_NATURAL_NoBlockStructure
+[       OK ] CXSparseCholesky/SparseCholeskyTest.FactorAndSolve/CX_SPARSE_NATURAL_NoBlockStructure (73 ms)
+[----------] 4 tests from CXSparseCholesky/SparseCholeskyTest (307 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test cases ran. (671 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.77 sec
+----------------------------------------------------------
+Test Passed.
+"sparse_cholesky_test" end time: Oct 14 04:50 JST
+"sparse_cholesky_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/76 Testing: sparse_normal_cholesky_solver_test
+68/76 Test: sparse_normal_cholesky_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/sparse_normal_cholesky_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"sparse_normal_cholesky_solver_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from SparseNormalCholeskySolverTest
+[ RUN      ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingSuiteSparsePreOrdering
+[       OK ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingSuiteSparsePreOrdering (19 ms)
+[ RUN      ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingSuiteSparsePostOrdering
+[       OK ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingSuiteSparsePostOrdering (1 ms)
+[ RUN      ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingCXSparsePreOrdering
+[       OK ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingCXSparsePreOrdering (0 ms)
+[ RUN      ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingCXSparsePostOrdering
+[       OK ] SparseNormalCholeskySolverTest.SparseNormalCholeskyUsingCXSparsePostOrdering (1 ms)
+[----------] 4 tests from SparseNormalCholeskySolverTest (23 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (25 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"sparse_normal_cholesky_solver_test" end time: Oct 14 04:50 JST
+"sparse_normal_cholesky_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/76 Testing: system_test
+69/76 Test: system_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/system_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"system_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 6 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 6 tests from PowellTest
+[ RUN      ] PowellTest.DenseQR
+[       OK ] PowellTest.DenseQR (36 ms)
+[ RUN      ] PowellTest.DenseNormalCholesky
+[       OK ] PowellTest.DenseNormalCholesky (17 ms)
+[ RUN      ] PowellTest.DenseSchur
+[       OK ] PowellTest.DenseSchur (7 ms)
+[ RUN      ] PowellTest.IterativeSchurWithJacobi
+[       OK ] PowellTest.IterativeSchurWithJacobi (11 ms)
+[ RUN      ] PowellTest.SparseNormalCholeskyUsingSuiteSparse
+[       OK ] PowellTest.SparseNormalCholeskyUsingSuiteSparse (7 ms)
+[ RUN      ] PowellTest.SparseNormalCholeskyUsingCXSparse
+[       OK ] PowellTest.SparseNormalCholeskyUsingCXSparse (6 ms)
+[----------] 6 tests from PowellTest (89 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test case ran. (91 ms total)
+[  PASSED  ] 6 tests.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"system_test" end time: Oct 14 04:50 JST
+"system_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/76 Testing: tiny_solver_test
+70/76 Test: tiny_solver_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/tiny_solver_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"tiny_solver_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from TinySolver
+[ RUN      ] TinySolver.SimpleExample
+[       OK ] TinySolver.SimpleExample (0 ms)
+[ RUN      ] TinySolver.ParametersDynamic
+[       OK ] TinySolver.ParametersDynamic (0 ms)
+[ RUN      ] TinySolver.ResidualsDynamic
+[       OK ] TinySolver.ResidualsDynamic (0 ms)
+[ RUN      ] TinySolver.ParametersAndResidualsDynamic
+[       OK ] TinySolver.ParametersAndResidualsDynamic (0 ms)
+[----------] 4 tests from TinySolver (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (4 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"tiny_solver_test" end time: Oct 14 04:50 JST
+"tiny_solver_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/76 Testing: triplet_sparse_matrix_test
+71/76 Test: triplet_sparse_matrix_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/triplet_sparse_matrix_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"triplet_sparse_matrix_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 8 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 8 tests from TripletSparseMatrix
+[ RUN      ] TripletSparseMatrix.DefaultConstructorReturnsEmptyObject
+[       OK ] TripletSparseMatrix.DefaultConstructorReturnsEmptyObject (0 ms)
+[ RUN      ] TripletSparseMatrix.SimpleConstructorAndBasicOperations
+[       OK ] TripletSparseMatrix.SimpleConstructorAndBasicOperations (35 ms)
+[ RUN      ] TripletSparseMatrix.CopyConstructor
+[       OK ] TripletSparseMatrix.CopyConstructor (0 ms)
+[ RUN      ] TripletSparseMatrix.AssignmentOperator
+[       OK ] TripletSparseMatrix.AssignmentOperator (0 ms)
+[ RUN      ] TripletSparseMatrix.AppendRows
+[       OK ] TripletSparseMatrix.AppendRows (0 ms)
+[ RUN      ] TripletSparseMatrix.AppendCols
+[       OK ] TripletSparseMatrix.AppendCols (1 ms)
+[ RUN      ] TripletSparseMatrix.CreateDiagonalMatrix
+[       OK ] TripletSparseMatrix.CreateDiagonalMatrix (0 ms)
+[ RUN      ] TripletSparseMatrix.Resize
+[       OK ] TripletSparseMatrix.Resize (0 ms)
+[----------] 8 tests from TripletSparseMatrix (38 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 1 test case ran. (40 ms total)
+[  PASSED  ] 8 tests.
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"triplet_sparse_matrix_test" end time: Oct 14 04:50 JST
+"triplet_sparse_matrix_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/76 Testing: trust_region_minimizer_test
+72/76 Test: trust_region_minimizer_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/trust_region_minimizer_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"trust_region_minimizer_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from TrustRegionMinimizer
+[ RUN      ] TrustRegionMinimizer.PowellsSingularFunctionUsingLevenbergMarquardt
+[       OK ] TrustRegionMinimizer.PowellsSingularFunctionUsingLevenbergMarquardt (48 ms)
+[ RUN      ] TrustRegionMinimizer.PowellsSingularFunctionUsingDogleg
+[       OK ] TrustRegionMinimizer.PowellsSingularFunctionUsingDogleg (25 ms)
+[ RUN      ] TrustRegionMinimizer.JacobiScalingTest
+[       OK ] TrustRegionMinimizer.JacobiScalingTest (10 ms)
+[ RUN      ] TrustRegionMinimizer.GradientToleranceConvergenceUpdatesStep
+[       OK ] TrustRegionMinimizer.GradientToleranceConvergenceUpdatesStep (9 ms)
+[----------] 4 tests from TrustRegionMinimizer (94 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (96 ms total)
+[  PASSED  ] 4 tests.
+<end of output>
+Test time =   0.21 sec
+----------------------------------------------------------
+Test Passed.
+"trust_region_minimizer_test" end time: Oct 14 04:50 JST
+"trust_region_minimizer_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/76 Testing: trust_region_preprocessor_test
+73/76 Test: trust_region_preprocessor_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/trust_region_preprocessor_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"trust_region_preprocessor_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 22 tests from 3 test cases.
+[----------] Global test environment set-up.
+[----------] 6 tests from TrustRegionPreprocessor
+[ RUN      ] TrustRegionPreprocessor.ZeroProblem
+[       OK ] TrustRegionPreprocessor.ZeroProblem (14 ms)
+[ RUN      ] TrustRegionPreprocessor.ProblemWithInvalidParameterBlock
+[       OK ] TrustRegionPreprocessor.ProblemWithInvalidParameterBlock (0 ms)
+[ RUN      ] TrustRegionPreprocessor.ParameterBlockBoundsAreInvalid
+[       OK ] TrustRegionPreprocessor.ParameterBlockBoundsAreInvalid (0 ms)
+[ RUN      ] TrustRegionPreprocessor.ParamterBlockIsInfeasible
+[       OK ] TrustRegionPreprocessor.ParamterBlockIsInfeasible (0 ms)
+[ RUN      ] TrustRegionPreprocessor.RemoveParameterBlocksFailed
+[       OK ] TrustRegionPreprocessor.RemoveParameterBlocksFailed (0 ms)
+[ RUN      ] TrustRegionPreprocessor.RemoveParameterBlocksSucceeds
+[       OK ] TrustRegionPreprocessor.RemoveParameterBlocksSucceeds (0 ms)
+[----------] 6 tests from TrustRegionPreprocessor (17 ms total)
+
+[----------] 15 tests from LinearSolverAndEvaluatorCreationTest
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.DenseQR
+[       OK ] LinearSolverAndEvaluatorCreationTest.DenseQR (20 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.DenseNormalCholesky
+[       OK ] LinearSolverAndEvaluatorCreationTest.DenseNormalCholesky (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.DenseSchur
+[       OK ] LinearSolverAndEvaluatorCreationTest.DenseSchur (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SparseNormalCholesky
+[       OK ] LinearSolverAndEvaluatorCreationTest.SparseNormalCholesky (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SparseSchur
+[       OK ] LinearSolverAndEvaluatorCreationTest.SparseSchur (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.CGNR
+[       OK ] LinearSolverAndEvaluatorCreationTest.CGNR (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.IterativeSchur
+[       OK ] LinearSolverAndEvaluatorCreationTest.IterativeSchur (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.MinimizerIsAwareOfBounds
+[       OK ] LinearSolverAndEvaluatorCreationTest.MinimizerIsAwareOfBounds (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithBadOrdering
+[       OK ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithBadOrdering (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithGoodOrdering
+[       OK ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithGoodOrdering (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithEmptyFirstEliminationGroup
+[       OK ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithEmptyFirstEliminationGroup (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithEmptySecondEliminationGroup
+[       OK ] LinearSolverAndEvaluatorCreationTest.SchurTypeSolverWithEmptySecondEliminationGroup (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.InnerIterationsWithTwoParameterBlocks
+[       OK ] LinearSolverAndEvaluatorCreationTest.InnerIterationsWithTwoParameterBlocks (1 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.InvalidInnerIterationsOrdering
+[       OK ] LinearSolverAndEvaluatorCreationTest.InvalidInnerIterationsOrdering (0 ms)
+[ RUN      ] LinearSolverAndEvaluatorCreationTest.ValidInnerIterationsOrdering
+[       OK ] LinearSolverAndEvaluatorCreationTest.ValidInnerIterationsOrdering (0 ms)
+[----------] 15 tests from LinearSolverAndEvaluatorCreationTest (33 ms total)
+
+[----------] 1 test from TrustRegionPreprocessorTest
+[ RUN      ] TrustRegionPreprocessorTest.InnerIterationsWithOneParameterBlock
+[       OK ] TrustRegionPreprocessorTest.InnerIterationsWithOneParameterBlock (4 ms)
+[----------] 1 test from TrustRegionPreprocessorTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 22 tests from 3 test cases ran. (56 ms total)
+[  PASSED  ] 22 tests.
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Passed.
+"trust_region_preprocessor_test" end time: Oct 14 04:50 JST
+"trust_region_preprocessor_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/76 Testing: visibility_test
+74/76 Test: visibility_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/visibility_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"visibility_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 2 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 2 tests from VisibilityTest
+[ RUN      ] VisibilityTest.SimpleMatrix
+[       OK ] VisibilityTest.SimpleMatrix (1 ms)
+[ RUN      ] VisibilityTest.NoEBlocks
+[       OK ] VisibilityTest.NoEBlocks (0 ms)
+[----------] 2 tests from VisibilityTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 2 tests.
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"visibility_test" end time: Oct 14 04:50 JST
+"visibility_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/76 Testing: visibility_based_preconditioner_test
+75/76 Test: visibility_based_preconditioner_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/visibility_based_preconditioner_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"visibility_based_preconditioner_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 0 tests from 0 test cases.
+[==========] 0 tests from 0 test cases ran. (1 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"visibility_based_preconditioner_test" end time: Oct 14 04:50 JST
+"visibility_based_preconditioner_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/76 Testing: bundle_adjustment_test
+76/76 Test: bundle_adjustment_test
+Command: "/home/pi/Packages/ceres-solver/build/bin/bundle_adjustment_test" "--test_srcdir" "/home/pi/Packages/ceres-solver/data"
+Directory: /home/pi/Packages/ceres-solver/build/internal/ceres
+"bundle_adjustment_test" start time: Oct 14 04:50 JST
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[==========] Running 18 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 18 tests from BundleAdjustmentTest
+[ RUN      ] BundleAdjustmentTest.DenseSchurWithAutomaticOrdering
+[       OK ] BundleAdjustmentTest.DenseSchurWithAutomaticOrdering (99463 ms)
+[ RUN      ] BundleAdjustmentTest.DenseSchurWithUserOrdering
+[       OK ] BundleAdjustmentTest.DenseSchurWithUserOrdering (98825 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithJacobiAndAutomaticOrdering
+[       OK ] BundleAdjustmentTest.IterativeSchurWithJacobiAndAutomaticOrdering (153008 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithJacobiAndUserOrdering
+[       OK ] BundleAdjustmentTest.IterativeSchurWithJacobiAndUserOrdering (151815 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithSchurJacobiAndAutomaticOrdering
+[       OK ] BundleAdjustmentTest.IterativeSchurWithSchurJacobiAndAutomaticOrdering (136981 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithSchurJacobiAndUserOrdering
+[       OK ] BundleAdjustmentTest.IterativeSchurWithSchurJacobiAndUserOrdering (136356 ms)
+[ RUN      ] BundleAdjustmentTest.SparseNormalCholeskyWithAutomaticOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.SparseNormalCholeskyWithAutomaticOrderingUsingSuiteSparse (147775 ms)
+[ RUN      ] BundleAdjustmentTest.SparseNormalCholeskyWithUserOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.SparseNormalCholeskyWithUserOrderingUsingSuiteSparse (145447 ms)
+[ RUN      ] BundleAdjustmentTest.SparseSchurWithAutomaticOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.SparseSchurWithAutomaticOrderingUsingSuiteSparse (101138 ms)
+[ RUN      ] BundleAdjustmentTest.SparseSchurWithUserOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.SparseSchurWithUserOrderingUsingSuiteSparse (99089 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithClusterJacobiAndAutomaticOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.IterativeSchurWithClusterJacobiAndAutomaticOrderingUsingSuiteSparse (141774 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithClusterJacobiAndUserOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.IterativeSchurWithClusterJacobiAndUserOrderingUsingSuiteSparse (140912 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithClusterTridiagonalAndAutomaticOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.IterativeSchurWithClusterTridiagonalAndAutomaticOrderingUsingSuiteSparse (147914 ms)
+[ RUN      ] BundleAdjustmentTest.IterativeSchurWithClusterTridiagonalAndUserOrderingUsingSuiteSparse
+[       OK ] BundleAdjustmentTest.IterativeSchurWithClusterTridiagonalAndUserOrderingUsingSuiteSparse (146188 ms)
+[ RUN      ] BundleAdjustmentTest.SparseNormalCholeskyWithAutomaticOrderingUsingCXSparse
+[       OK ] BundleAdjustmentTest.SparseNormalCholeskyWithAutomaticOrderingUsingCXSparse (133628 ms)
+[ RUN      ] BundleAdjustmentTest.SparseNormalCholeskyWithUserOrderingUsingCXSparse
+[       OK ] BundleAdjustmentTest.SparseNormalCholeskyWithUserOrderingUsingCXSparse (133843 ms)
+[ RUN      ] BundleAdjustmentTest.SparseSchurWithAutomaticOrderingUsingCXSparse
+[       OK ] BundleAdjustmentTest.SparseSchurWithAutomaticOrderingUsingCXSparse (100519 ms)
+[ RUN      ] BundleAdjustmentTest.SparseSchurWithUserOrderingUsingCXSparse
+[       OK ] BundleAdjustmentTest.SparseSchurWithUserOrderingUsingCXSparse (99015 ms)
+[----------] 18 tests from BundleAdjustmentTest (2313700 ms total)
+
+[----------] Global test environment tear-down
+[==========] 18 tests from 1 test case ran. (2313701 ms total)
+[  PASSED  ] 18 tests.
+<end of output>
+Test time = 2313.82 sec
+----------------------------------------------------------
+Test Passed.
+"bundle_adjustment_test" end time: Oct 14 05:29 JST
+"bundle_adjustment_test" time elapsed: 00:38:33
+----------------------------------------------------------
+
+End testing: Oct 14 05:29 JST
