@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_optflow
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/optflow/samples/motempl.cpp
+ Extra
+ opencv_optflow
+ Sample
