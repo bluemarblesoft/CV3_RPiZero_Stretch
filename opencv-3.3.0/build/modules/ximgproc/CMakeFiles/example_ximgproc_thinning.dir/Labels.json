@@ -1,0 +1,24 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/pi/Packages/opencv_contrib-3.3.0/modules/ximgproc/samples/thinning.cpp",
+			"labels" : 
+			[
+				"Extra",
+				"opencv_ximgproc",
+				"Sample"
+			]
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Extra",
+			"opencv_ximgproc",
+			"Sample"
+		],
+		"name" : "example_ximgproc_thinning"
+	}
+}
