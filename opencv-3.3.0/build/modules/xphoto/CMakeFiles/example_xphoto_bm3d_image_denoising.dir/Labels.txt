@@ -1,0 +1,9 @@
+# Target labels
+ Extra
+ opencv_xphoto
+ Sample
+# Source files and their labels
+/home/pi/Packages/opencv_contrib-3.3.0/modules/xphoto/samples/bm3d_image_denoising.cpp
+ Extra
+ opencv_xphoto
+ Sample
